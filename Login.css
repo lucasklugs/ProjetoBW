@@ -50,4 +50,11 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #274e07;
+ }
+ a{
+  margin-left: 215px;
+  color: #E8E5E0;
+}
+a:hover{
+  color: #dbd9d6;
 }
