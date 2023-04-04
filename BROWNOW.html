@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +13,13 @@
         padding: 0;
     }
 
-
-
+    @font-face {
+        font-family: fontb;
+        src: url(TTDrugsTrialRegular.otf);
+    }
 
     header {
-        background-color: burlywood;
+        background-color: #3D2F2B;
         height: 150px;
         width: 100%;
         display: flex;
@@ -35,6 +38,7 @@
 
 
     .fundo3 {
+        font-family: fontb;
         background-color: whitesmoke;
         height: 70px;
         width: 100%;
@@ -43,6 +47,7 @@
         margin-top: 35px;
         position: fixed;
     }
+
     .fundo4 {
         background-color: moccasin;
         height: 100%;
@@ -67,6 +72,7 @@
 
 
     .btn-text-top {
+        font-family: fontb;
         background-color: aliceblue;
         border: 1px solid rgb(255, 255, 255, .1);
         border-radius: 20px;
@@ -78,6 +84,7 @@
 
 
     .btn-buscar-top {
+        font-family: fontb;
         background: url(https://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
         width: 20px;
         height: 22px;
@@ -93,28 +100,38 @@
         margin-top: 10px;
         margin-left: 20px;
     }
-    .carro{
+
+    .carro {
         margin-left: 950px;
         margin-top: -70px;
     }
-    .conta{
+
+    .conta {
         margin-left: 1040px;
         margin-top: -51px;
     }
-    .texto2{
-        color: burlywood;
+
+    .texto2 {
+        font-family: fontb;
+        color: #3D2F2B;
         gap: 3rem;
         margin-left: 500px;
         margin-top: -90px;
         display: flex;
         font-size: 30px;
     }
-    .texto2 a{
+
+    .texto2 a {
+        font-family: fontb;
         color: white;
         font-weight: 700;
         transition: 0.3s;
     }
-    .excluir-btn{
+    a:hover {
+        color: #d3c5b0;
+    }
+
+    .excluir-btn {
         margin-left: 1000px;
         margin-top: -33px;
         padding: 10px 40px;
@@ -122,10 +139,12 @@
         cursor: pointer;
         transition: 2s;
     }
-    .excluir-btn button:hover{
+
+    .excluir-btn button:hover {
         transform: scale(0.9);
     }
-    .cookies-btn{
+
+    .cookies-btn {
         background-color: whitesmoke;
         color: #fff;
         margin-left: 1000px;
@@ -136,58 +155,71 @@
         cursor: pointer;
         transition: 2s;
     }
-    .cookies-btn button:hover{
+
+    .cookies-btn button:hover {
         transform: scale(0.9);
     }
-    .slider{
+
+    .slider {
         margin: 0 auto;
         width: 1200px;
         height: 400px;
         overflow: hidden;
         margin-top: 10px;
     }
-    .slides{
+
+    .slides {
         width: 400%;
         height: 400px;
         display: flex;
     }
-    .slides input{
+
+    .slides input {
         display: none;
     }
-    .slide{
+
+    .slide {
         width: 25%;
         position: relative;
     }
-    .slide img{
+
+    .slide img {
         width: 1200px;
     }
-    .manual-navigation{
+
+    .manual-navigation {
         position: absolute;
         width: 800px;
         margin-top: -30px;
         display: flex;
         justify-content: center;
     }
-    .manual-btn{
+
+    .manual-btn {
         border: 2px solid #fff;
         padding: 5px;
         border-radius: 10px;
         cursor: pointer;
         transition: 1s;
     }
-    .manual-btn:not(last-child){
+
+    .manual-btn:not(last-child) {
         margin-right: 40px;
     }
-    .manual-btn:hover{
+
+    .manual-btn:hover {
         background-color: #fff;
     }
-    #radio1:checked ~ .first{
+
+    #radio1:checked~.first {
         margin: 0;
     }
-    #radio2:checked ~ .first{
+
+    #radio2:checked~.first {
         margin-left: -25%;
     }
-    #radio3:checked ~ .first{
+
+    #radio3:checked~.first {
         margin-left: -50%;
     }
 </style>
@@ -200,7 +232,7 @@
             <input class="btn-text-top" type="text" name="txtsearch" placeholder="O que você procura?">
             <div>
                 <button class="btn-buscar-top" type="submit"></button>
-                </div>
+            </div>
             <div class="texto2">
                 <li>
                     <a href="#">Home</a>
@@ -217,39 +249,43 @@
         </form>
     </header>
     <div class="fundo2">
-    <div class="slider">
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <div class="slide first"><IMG SRC="pascoa.png"></div>
-            <div class="slide"><IMG SRC="jogo.png"></div>
-            <div class="slide"><IMG SRC="lar.png"></div>
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <div class="slide first"><IMG SRC="pascoa.png"></div>
+                <div class="slide"><IMG SRC="jogo.png"></div>
+                <div class="slide"><IMG SRC="lar.png"></div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
             </div>
-        </div>
-             <div class="manual-navigation">
+            <div class="manual-navigation">
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
-            </div>          
-        </div>
-    <div class="fundo3">
-        <div class="texto">Nós armazenamos algumas informações sobre navegação através de cookies para saber o que<br>
-            agrada e prover uma melhor experiência no nosso site para você. Ao continuar a usar nossos <br>
-            serviços, você concorda com a <b>Política de Privacidade e Cookies.</b>
-            <div class="cookies-btn">
-                <button><h3>Aceitar todos os Cookies</h3></button>
-            </div>
-            <div class="excluir-btn">
-                <button>Recusar todos os Cookies</button>
             </div>
         </div>
-    </div>
+        <div class="fundo3">
+            <div class="texto">Nós armazenamos algumas informações sobre navegação através de cookies para saber o
+                que<br>
+                agrada e prover uma melhor experiência no nosso site para você. Ao continuar a usar nossos <br>
+                serviços, você concorda com a <b>Política de Privacidade e Cookies.</b>
+                <div class="cookies-btn">
+                    <button>
+                        <h3>Aceitar todos os Cookies</h3>
+                    </button>
+                </div>
+                <div class="excluir-btn">
+                    <button>Recusar todos os Cookies</button>
+                </div>
+            </div>
+        </div>
         <div class="fundo4"></div>
-    </form>
+        </form>
 </body>
+
 </html>
