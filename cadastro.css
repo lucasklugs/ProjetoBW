@@ -1,0 +1,54 @@
+@font-face {
+  font-family: fontb;
+  src: url(TTDrugsTrialRegular.otf);
+}
+
+body {
+  font-family: fontb;
+  background-color: #E8E5E0;
+}
+
+form {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 400px;
+  background-color: #3D2F2B;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #E8E5E0;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+  font-family: fontb;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background-color: #40a009;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #274e07;
+}
