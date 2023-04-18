@@ -15,11 +15,11 @@
         </div>
         <div>
             <label for="username">Nome:</label>
-            <input type="text" id="username" placeholder="Insira seu nome" name="username" required>
+            <input type="text" id="username" pattern="[a-zA-Z]*" placeholder="Insira seu nome" name="username" required>
         </div>
         <div>
             <label for="surname">Sobrenome:</label>
-            <input type="text" id="surname" placeholder="Insira seu sobrenome" name="surname" required>
+            <input type="text" id="surname"  pattern="[a-zA-Z]*" placeholder="Insira seu sobrenome" name="surname" required>
         </div>
         <div>
             <label for="date">Data de nascimento:</label>
@@ -27,7 +27,7 @@
         </div>
         <div>
             <label for="email">E-mail:</label>
-            <input type="email" id="email" placeholder="Insira seu e-mail" name="email" required>
+            <input type="email" id="email" pattern="email" placeholder="Insira seu e-mail" name="email" required>
         </div>
         <div>
             <label for="password">Senha:</label>

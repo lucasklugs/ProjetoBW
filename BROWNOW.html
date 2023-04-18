@@ -8,6 +8,9 @@
     <title>BrowNow</title>
 </head>
 <style>
+    body{
+        background-color: moccasin;
+    }
     * {
         margin: 0;
         padding: 0;
@@ -116,17 +119,21 @@
         color: #3D2F2B;
         gap: 3rem;
         margin-left: 500px;
-        margin-top: -90px;
+        margin-top: -50px;
         display: flex;
-        font-size: 30px;
+        font-size: 25px;
+
     }
 
     .texto2 a {
         font-family: fontb;
+        text-decoration: underline 2px;
         color: white;
         font-weight: 700;
         transition: 0.3s;
+        text-underline-offset: 0.2rem;
     }
+
     a:hover {
         color: #d3c5b0;
     }
@@ -162,10 +169,11 @@
 
     .slider {
         margin: 0 auto;
-        width: 1200px;
+        margin-left: 220px;
+        width: 900px;
         height: 400px;
         overflow: hidden;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .slides {
@@ -184,13 +192,14 @@
     }
 
     .slide img {
-        width: 1200px;
+        width: 100%;
     }
 
     .manual-navigation {
         position: absolute;
         width: 800px;
-        margin-top: -30px;
+        margin-top: -130px;
+        margin-left: 70px;
         display: flex;
         justify-content: center;
     }
@@ -222,6 +231,12 @@
     #radio3:checked~.first {
         margin-left: -50%;
     }
+    ul{
+        display: flex;
+    }
+    ul li{
+        width: 160px;
+    }
 </style>
 
 
@@ -234,15 +249,17 @@
                 <button class="btn-buscar-top" type="submit"></button>
             </div>
             <div class="texto2">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="BWhistoria.html">História</a>
-                </li>
-                <li>
-                    <a href="#">Presentes</a>
-                </li>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="BWhistoria.html">Sobre nós</a>
+                    </li>
+                </ul>
             </div>
             <div class="carro"><a href="#"><IMG SRC="carro.png" height="50px" width="100px"></a></div>
             <div class="conta"><a href="BWlogin.html"><IMG SRC="conta.png" height="50px" width="100px"></a></div>

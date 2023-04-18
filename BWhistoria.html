@@ -24,7 +24,7 @@
 
         header {
             background-color: #3D2F2B;
-            height: 150px;
+            height: 180px;
             width: 100%;
             display: flex;
             align-items: center;
@@ -70,7 +70,6 @@
         }
 
         .logo {
-            margin-top: 10px;
             margin-left: 20px;
         }
 
@@ -89,7 +88,7 @@
             color: #3D2F2B;
             gap: 3rem;
             margin-left: 500px;
-            margin-top: -90px;
+            margin-top: -50px;
             display: flex;
             font-size: 30px;
         }
@@ -99,6 +98,7 @@
             color: white;
             font-weight: 700;
             transition: 0.3s;
+            text-underline-offset: 0.2rem;
         }
 
         a:hover {
@@ -195,6 +195,14 @@
             margin-top: 90px;
             margin-left: 700px;
         }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            width: 160px;
+        }
     </style>
 </head>
 
@@ -207,15 +215,17 @@
                 <button class="btn-buscar-top" type="submit"></button>
             </div>
             <div class="texto2">
-                <li>
-                    <a href="BROWNOW.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">História</a>
-                </li>
-                <li>
-                    <a href="#">Cupons</a>
-                </li>
+                <ul>
+                    <li>
+                        <a href="BROWNOW.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre nós</a>
+                    </li>
+                </ul>
             </div>
             <div class="carro"><a href="#"><IMG SRC="carro.png" height="50px" width="100px"></a></div>
             <div class="conta"><a href="BWlogin.html"><IMG SRC="conta.png" height="50px" width="100px"></a></div>
