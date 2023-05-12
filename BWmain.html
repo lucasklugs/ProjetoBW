@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -11,69 +11,52 @@
 
 <body>
     <header>
-        <div class="logo"><IMG SRC="img/logo.png" height="100px" width="200px"></div>
-        <div class="cabecalho">
-            <form class="form-busca-site" action="busca.php">
-                <input class="btn-text-top" type="text" name="txtsearch" placeholder="O que você procura?">
-            </form>
-            
-                <button class="btn-buscar-top" type="submit"></button>
-            
-            <div class="texto2">
-                <ul>
-                    <li>
-                        <a href="#"><u>Home</u></a>
-                    </li>
-                    <li>
-                        <a href="#">Produtos</a>
-                    </li>
-                    <li>
-                        <a href="BWhistoria.html">Sobre nós</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="carro"><a href="#"><IMG SRC="img/carro.png" height="50px" width="100px"></a></div>
-            <div class="conta"><a href="BWlogin.html"><IMG SRC="img/conta.png" height="50px" width="100px"></a></div>
+        <div class="logo">
+            <IMG SRC="img/logo.png" height="150px">
+        </div>
+        <div class="texto2">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Produtos</a>
+                </li>
+                <li>
+                    <a href="BWhistoria.html">Sobre nós</a>
+                </li>
+            </ul>
+        </div>
+        <div class="icons">
+            <a href="#"><IMG SRC="img/carro.png" height="50px" width="100px"></a>
+            <a href="BWlogin.html"><IMG SRC="img/conta.png" height="50px" width="100px"></a>
         </div>
     </header>
-    <div class="fundo2">
-
-        <div class="slider">
-            <div class="carrosel">
-                <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-
-
-                    <div class="slide first">
-                        <img src="img/pascoa.png" alt="imagem 1">
-                    </div>
-                    <div class="slide">
-                        <img src="img/jogo.png" height="333.83" alt="imagem 2">
-                    </div>
-                    <div class="slide">
-                        <img src="img/lar.png" alt="imagem 3">
-                    </div>
-                    <div class="navegation">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                    </div>
-                </div>
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                </div>
-            </div>
+    <div class="navbar">
+        <input class="btn-text-top" type="text" name="txtsearch" placeholder="O que você procura?">
+        <button class="btn-buscar-top" type="submit"><img
+                src="https://www.devmedia.com.br/imagens/2013/buscar_grey.png" height="20" width="20" /></button>
+    </div>
+    <div class="mySlides fade">
+        <div class="carrimg">
+            <img src="img/jogo.png">
         </div>
-
+        </a>
+    </div>
+    <div class="mySlides fade">
+        <div class="carrimg">
+            <img src="img/Pascoa.png">
+        </div>
+        </a>
+    </div>
+    <div class="mySlides fade">
+        <div class="carrimg">
+            <img src="img/lar.png">
+        </div>
+        </a>
     </div>
 
-
-    <div class="fundo4"></div>
-    </form>
+    <script src="js/bw.js"></script>
 </body>
 
 </html>
