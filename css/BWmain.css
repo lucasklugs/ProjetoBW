@@ -109,6 +109,8 @@ li {
 }
 
 a:hover {
+    width: 10px;
+    border-bottom: 2px solid #fff;
     color: #d3c5b0;
 }
 
