@@ -14,33 +14,24 @@ body {
 
 header {
     background-color: #3D2F2B;
-    height: 170px;
-    width: 100%;
+    height: 10rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0
 }
-
-
+.logo{
+    margin-left: 6%;
+}
+.navbar{
+    display: flex;
+    background-color: #3D2F2B;
+    height: 50px;
+    width: 100%;
+}
 .fundo2 {
     margin-top: -10px;
 }
 
-.texto {
-    text-align: center;
-    font-size: 20px;
-}
-
-
-.form-busca-site {
-    width: 50%;
-    height: 80%;
-    margin-top: 50px;
-    margin-right: 800px;
-}
-
 li {
+    width: 20px;
     list-style-type: none;
 }
 
@@ -48,108 +39,65 @@ li {
     font-family: fontb;
     background-color: aliceblue;
     border: 1px solid rgb(255, 255, 255, .1);
-    border-radius: 20px;
+    margin-left: 5%;
+    border-radius: 10px;
     color: #8795a2;
-    height: 42px;
-    width: 50%;
-    padding: 5px 40px 5px 15px;
+    width: 22rem;
+    height: 2rem;
 }
-
-
 .btn-buscar-top {
-    font-family: fontb;
-    background: url(https://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
+    background-color: #3D2F2B ;
+    margin-top: 15px;
     width: 20px;
     height: 22px;
     border: none;
-    position: relative;
-    top: -35px;
     transform: translateY(-50%);
-    left: 340px;
 }
 
-.logo {
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.carro {
-    margin-left: 950px;
-    margin-top: -50px;
-}
-
-.conta {
-    margin-left: 1040px;
-    margin-top: -50px;
+.icons{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 20%;
 }
 
 .texto2 {
     font-family: fontb;
     color: #3D2F2B;
-    gap: 3rem;
-    margin-left: 500px;
-    margin-top: -70px;
-    display: grid;
-    font-size: 25px;
+    margin-left: 15%;
+    margin-top: 12%;
+    font-size: 16px;
 
 }
 
 .texto2 a {
     font-family: fontb;
-    text-decoration: 2px;
+    text-decoration: 1px;
     color: white;
     font-weight: 700;
     text-underline-offset: 0.2rem;
 }
 
-a:hover {
-    width: 10px;
-    border-bottom: 2px solid #fff;
+li a:hover {
+    width: 5px;
+    border-bottom: 2px solid #bcb09e;
     color: #d3c5b0;
 }
-.carrossel {
-    width: 400px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-}
- 
-.slideshow-container {
-    max-width: 100%;
-    max-height: 300px;
-    position: relative;
-}
-
-/* Hide the images by default */
 .mySlides {
     display: none;
-}
-/* Botoes de avançar & voltar */
-.prev, .next {
-    position: absolute;
-    height: 40px;
-    margin-top: -30px;
-    cursor: pointer;
-    opacity: 0.5;
-    top: 50%;
 
 }
-.numbertext {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f2f2f2;
-    font-size: 12px;
-    background-color: #000000;
-    opacity: 0.4;
-    border-radius: 10px;
-    margin: 8px 8px;
-    padding: 5px 8px;
-    position: absolute;
-    top: 0;
+.mySlides img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 200px;
+    width: 64rem;
 }
 
 .fade {
     animation-name: fade;
-    animation-duration: 2.5s;
+    animation-duration: 1.0s;
 }
 
 @keyframes fade {
@@ -158,9 +106,12 @@ a:hover {
 }
 
 ul {
-    display: flex;
+    margin-left: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
 }
 
 ul li {
-    width: 160px;
+    width: 80px;
 }
