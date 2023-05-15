@@ -14,7 +14,7 @@ body {
 
 header {
     background-color: #3D2F2B;
-    height: 10rem;
+    height: 7rem;
     display: flex;
 }
 .logo{
@@ -22,7 +22,8 @@ header {
 }
 .navbar{
     display: flex;
-    background-color: #3D2F2B;
+    justify-content: end;
+    background-color: #ffffff;
     height: 50px;
     width: 100%;
 }
@@ -61,10 +62,9 @@ li {
 }
 
 .texto2 {
+    font-style: #0000;
     font-family: fontb;
     color: #3D2F2B;
-    margin-left: 15%;
-    margin-top: 12%;
     font-size: 16px;
 
 }
