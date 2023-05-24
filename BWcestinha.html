@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cestinha de Compras</title>
-    <link rel="stylesheet" href="css/cestinha.css">
+    <link rel="stylesheet" href="css/cestinha.css"> 
 </head>
 <body>
     <header>
@@ -29,9 +29,9 @@
             <td>R$ 44,90</td>
         <td>
         <div class="quantidade">
-            <button>+</button>
-            <span>1</span>
-            <button>-</button>
+            <button id="diminuir" onclick="stepper(this)"> - </button>
+            <input type="number" min="0" max="100" step="1" value="1" id="my-input" readonly>
+            <button id="aumentar" onclick="stepper(this)"> + </button>
         </div>
         </td>
             <td>R$ 44,90</td>
@@ -51,10 +51,11 @@
             <td>R$ 9,99</td>
             <td>
             <div class="quantidade">
-            <button>+</button>
-            <span>2</span>
-            <button>-</button>
+            <button id="diminuir" onclick="stepper(this)"> - </button>
+            <input type="number" min="0" max="100" step="1" value="1" id="my-input" readonly>
+            <button id="aumentar" onclick="stepper(this)"> + </button>
         </div>
+        <script src="js/cestinha.js"></script>
         </td>
             <td>R$ 19,98</td>
             <td>
@@ -62,10 +63,14 @@
             </td>
             </tr>
         <tr></tr>
+        <div class="botoes">
+            <button id="botao" href="#">DOAR</button>
+            <button id="botao" href="#">FINALIZAR</button>
+        </div>
+        </div>
         </tbody>
         </table>
         </section>
-        </div>
         </main>
 </body>
 </html>

@@ -19,11 +19,9 @@ header {
     justify-content: space-between;
 }
 
-
 span{
     margin-left: 30px;
 }
-
 
 h5{
     color:#E8E5E0;
@@ -55,7 +53,6 @@ s{
     font-size: 25px;
 }
 
-
 .produtos {
     display: flex;
     align-items: center;
@@ -76,39 +73,30 @@ s{
 .produtos .informacao .categoria {
     color: #666;
 }
-
-
 .quantidade {
     background: #eee;
     display: inline-flex;
-    padding: 0 0;
     align-items: center;
     border-radius: 20px;
     height: 30px;
+    width: 100%;
 }
 
-
-.quantidade span {
-    margin: 0 10px;
-}
-
-
-.quantidade button {
+.numeros{
+    width: 40%;
     display: flex;
     align-items: center;
-    background: transparent;
-    border: 0;
-    padding: 0 10px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid white;
+}
+
+button{
+    width: 20px;
+    border: none;
     font-size: 20px;
-    height: 100%;
+    margin-left: 5px;
 }
-
-
-.quantidade button:hover {
-    background: #ddd;
-}
-
-
 .remover {
     background: #eee;
     border: 0;
@@ -121,7 +109,28 @@ s{
     font-size: 20px;
 }
 
-
 .remover:hover {
     background: #ddd;
+}
+
+#botao{
+    background-color: #3D2F2C;
+    color: #AA8C85;
+    padding: 15px 15px;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.botoes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
