@@ -3,43 +3,40 @@ body {
 }
 
 * {
+    font-family: 'Montserrat';
     margin: 0;
     padding: 0;
 }
 
-@font-face {
-    font-family: fontb;
-    src: url(TTDrugsTrialRegular.otf);
-}
-
 header {
     background-color: #3D2F2B;
-    height: 8rem;
+    height: 7rem;
     display: flex;
 }
 
-.logo{
+.logo {
     justify-content: start;
     align-items: center;
     height: 60%;
     margin-right: 3rem;
 }
-.logo img{
+
+.logo img {
     height: 120px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    height: 2rem;
+    height: 2.2rem;
     width: 100%;
     font-style: #0000;
-    font-family: fontb;
     color: #3D2F2B;
     font-size: 14px;
 }
+
 .fundo2 {
     margin-top: -10px;
 }
@@ -49,43 +46,38 @@ li {
     list-style-type: none;
 }
 
-.buscar{
-    display: flex;
-    margin-left: 15%;
+.buscar {
     margin-top: 5%;
-}
-.btn-text-top {
-    font-family: fontb;
-    background-color: aliceblue;
-    border: 1px solid rgb(255, 255, 255, .1);
-    
-    border-radius: 10px;
-    color: #8795a2;
-    width: 22rem;
-    height: 2rem;
+    margin-left: 24%;
+    justify-content: center;
+    align-items: center;
 }
 
-.icons{
+.buscar input {
+    border-style: none;
+    background-color: #3D2F2B;
+    height: 2rem;
+    border-bottom: 2px solid #fff;
+}
+.buscar input hover{
+    border-bottom: 1px solid #bcb09e;
+    padding-bottom: 5px;
+    color: #d3c5b0;
+}
+
+.icons {
     display: flex;
     width: 4rem;
-    margin-top: 5%;
+    margin-top: 4%;
     margin-left: 20%;
 }
-.icons img{
+
+.icons img {
     height: 3rem;
     width: 3rem;
 }
 
-/* .texto2 {
-    font-style: #0000;
-    font-family: fontb;
-    color: #3D2F2B;
-    font-size: 12px;
-
-} */
-
 .navbar a {
-    font-family: fontb;
     text-decoration: 1px;
     color: black;
     font-weight: 700;
@@ -96,16 +88,18 @@ li a:hover {
     border-bottom: 2px solid #bcb09e;
     color: #d3c5b0;
 }
+
 .mySlides {
     display: none;
 
 }
-.mySlides img{
+
+.mySlides img {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-left: 200px;
+    margin-left: 12rem;
     width: 64rem;
 }
 
@@ -115,8 +109,13 @@ li a:hover {
 }
 
 @keyframes fade {
-    from {opacity: 0}
-    to {opacity: 1}
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 ul {
