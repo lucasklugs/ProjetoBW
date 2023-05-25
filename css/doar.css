@@ -1,0 +1,55 @@
+body {
+    background-color: moccasin;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: fontb;
+    src: url(TTDrugsTrialRegular.otf);
+}
+
+header {
+    background-color: #3D2F2B;
+    height: 8rem;
+    display: flex;
+}
+
+.texto{
+    font-size: 30px;
+    color: #A78983;
+    align-items: center;
+    display: flex;
+    margin-left: 40px;
+}
+
+.texto2{
+    color: #3D2F2B;
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.abdon{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.emanuel{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.ecos{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cestinha de Compras</title>
+    <link rel="stylesheet" href="css/cestinha.css"> 
+</head>
+<body>
+    <header>
+        <span>Cestinha</span>
+        <h5>Total de Pontos:24000</h5>
+    </header>
+    <main>
+        <div class="quadrado">
+        <section>
+        <table>
+        <tbody>
+        <td>
+            <div class="produtos">
+            <img src="img/cestinha1.png" height="300px" width="200px">
+            <div class="informacao">
+            <div class="nome">Brownie Costume Combo</div>
+        </div>
+        </div>
+        </td>
+            <td><s>54,90</s></td>
+            <td>R$ 44,90</td>
+        <td>
+        <div class="quantidade">
+            <button id="diminuir" onclick="stepper(this)"> - </button>
+            <input type="number" min="0" max="100" step="1" value="1" id="my-input" readonly>
+            <button id="aumentar" onclick="stepper(this)"> + </button>
+        </div>
+        </td>
+            <td>R$ 44,90</td>
+        <td>
+            <button class="remover">x</i></button>
+        </td>
+            <tr>
+            <td>
+            <div class="produtos">
+            <img src="img/cestinha2.png" height="300px" width="200px">
+            <div class="informacao">
+            <div class="nome">Brownie Pedaços de Morango</div>
+        </div>
+        </div>
+        </td>
+            <td><s>15,00</s></td>
+            <td>R$ 9,99</td>
+            <td>
+            <div class="quantidade">
+            <button id="diminuir" onclick="stepper(this)"> - </button>
+            <input type="number" min="0" max="100" step="1" value="1" id="my-input" readonly>
+            <button id="aumentar" onclick="stepper(this)"> + </button>
+        </div>
+        <script src="js/bw.js"></script>
+        </td>
+            <td>R$ 19,98</td>
+            <td>
+            <button class="remover">x</button>
+            </td>
+            </tr>
+        <tr></tr>
+        <div class="botoes">
+            <button id="botao" href="#">DOAR</button>
+            <button id="botao" href="#">FINALIZAR</button>
+        </div>
+        </div>
+        </tbody>
+        </table>
+        </section>
+        </main>
+</body>
+</html>
