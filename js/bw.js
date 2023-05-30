@@ -1,3 +1,4 @@
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -218,3 +219,4 @@ function atualizarTotalCarrinho() {
   document.getElementsByClassName("carrinho-preco-total")[0].innerText =
     "R$" + total.toLocaleString("pt-BR");
 }
+
