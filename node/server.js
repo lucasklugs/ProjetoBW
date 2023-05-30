@@ -28,10 +28,12 @@ connection.connect(function (err) {
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '../BWmain.html')
 })
- 
+
+
 app.post('/login', (req, res) => {
-  let username = req.body.username;
+  let  = req.body.username;
   let password = req.body.password;
+  
 
   connection.query("SELECT * FROM usuario where email = '" + username +"'", function (err, rows) {
     if (!err){

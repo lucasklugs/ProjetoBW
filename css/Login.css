@@ -1,10 +1,5 @@
-@font-face {
-  font-family: fontb;
-  src: url(TTDrugsTrialRegular.otf);
-}
-
 body {
-  font-family: fontb;
+  font-family: 'Montserrat';
   background-color: #E8E5E0;
 }
 
@@ -24,7 +19,7 @@ label {
   color: #E8E5E0;
 }
 
-input[type="email"],
+input[type="username"],
 input[type="text"],
 input[type="password"] {
   font-family: fontb;
