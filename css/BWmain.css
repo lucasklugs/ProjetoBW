@@ -54,6 +54,7 @@ header {
 }
 
 li {
+    font-style: black;
     width: 100px;
     list-style-type: none;
 }
