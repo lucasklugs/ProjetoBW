@@ -63,7 +63,7 @@ function ready() {
   }
 
   document
-    .getElementsByClassName("btn-pagar")[0]
+    .getElementById("btn-pagar")[0]
     .addEventListener("click", pagarClicked);
 }
 function pagarClicked() {
@@ -220,3 +220,15 @@ function atualizarTotalCarrinho() {
     "R$" + total.toLocaleString("pt-BR");
 }
 
+document.getElementById('btn-pagar').addEventListener('click', function() {
+  document.getElementById('payment-popup').style.display = 'block';
+});
+
+document.querySelector('form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Aqui você pode adicionar a lógica para processar o pagamento
+
+  // Fechar o popup após o pagamento ser processado
+  document.getElementById('payment-popup').style.display = 'none';
+});
