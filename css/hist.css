@@ -68,6 +68,7 @@
         .carro {
             margin-left: 950px;
             margin-top: -50px;
+
         }
 
         .conta {
@@ -112,8 +113,11 @@
         }
 
         h1 {
-            font-family: fontc;
-            margin-left: 20px;
+            font-family:verdana;
+            margin-left: 190px;
+            color: #3D2F2B;
+            padding: 9px;
+           
         }
 
         .texto3 {
@@ -123,6 +127,8 @@
         .container {
             width: 100%;
             height: 100vh;
+            font-size: large;
+          
         }
 
         .box {
