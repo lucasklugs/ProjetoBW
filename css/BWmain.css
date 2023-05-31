@@ -187,6 +187,7 @@ ul {
 }
 .produtos .produtos-itens .item .titulo-item{
     display: block;
+    height: 60px;
     text-align: center;
 }
 .produtos .produtos-itens .item .preco-item{
