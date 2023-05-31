@@ -1,5 +1,5 @@
 body {
-    background-color: moccasin;
+    background-color: rgb(245, 230, 203);
 }
 
 * {
@@ -18,7 +18,7 @@ header {
     display: flex;
 }
 .logo{
-    margin-left: 6%;
+    margin-left: 8%;
 }
 .navbar{
     display: flex;
@@ -56,15 +56,15 @@ li {
 
 .icons{
     display: flex;
-    margin-top: 5%;
-    margin-left: 20%;
+    margin-top: 4%;
+    margin-left: 25%;
 }
 
 .texto2 {
     font-family: fontb;
     color: #3D2F2B;
     margin-left: 15%;
-    margin-top: 12%;
+    margin-top: 11%;
     font-size: 16px;
 
 }
@@ -91,7 +91,7 @@ li a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-left: 200px;
+    margin-left: 15%;
     width: 64rem;
 }
 
@@ -114,4 +114,8 @@ ul {
 
 ul li {
     width: 80px;
+}
+
+.navbar img {
+    margin-left: 0.5rem;
 }
