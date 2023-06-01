@@ -26,7 +26,7 @@ body {
     height: 100px;
 }
 .buscar{
-    width: 20%;
+    width: 21%;
     height: 90px;
     display: flex;
     justify-content: center;
@@ -96,6 +96,12 @@ li a:hover {
     border-bottom: 2px solid #bcb09e;
     color: #d3c5b0;
 }
+.carrimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .mySlides {
     margin-top: 5%;
     display: none;
@@ -105,8 +111,6 @@ li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 12rem;
     width: 64rem;
 }
 .fade {
@@ -130,10 +134,12 @@ ul {
 .produtos{
     overflow-x: hidden;
     max-width: 1200px;
+    width: 100%;
     padding: 10px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .produtos .produtos-itens{
     margin-top: 30px;
