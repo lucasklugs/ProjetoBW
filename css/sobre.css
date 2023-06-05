@@ -1,46 +1,37 @@
 body {
     background-color: #E8E5E0;
 }
-
 * {
     font-family: 'Montserrat';
     margin: 0;
     border: 0;
     padding: 0;
 }
-
 .navbar{
     width: 100%;
     height: 100px;
     background-color: #473734;
     display: flex;
 }
-
 .cabeca{
     width: 100%;
     height: 100px;
 }
-
 .logo {
    width: 160px;
    height: 100px;
 }
-
 .logo img{
     width: 160px;
     height: 100px;
 }
-
 .buscar{
-    width: 170px;
-    height: 90px;
+    width: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-left: 450px;
 }
-
-
 .icons {
     display: flex;
     justify-content: flex-end;
@@ -48,13 +39,10 @@ body {
     margin-right: 80px;
     flex: 1;
 }
-
 .icons img {
     height: 70px;
     width: 130px;
 }
-
-
 .options {
     display: flex;
     justify-content: center;
@@ -66,11 +54,9 @@ body {
     color: #473734;
     font-size: 15px;
 }
-
 .fundo2 {
     margin-top: -10px;
 }
-
 li {
     font-size: 16px;
     font-style: black;
@@ -78,17 +64,19 @@ li {
     list-style-type: none;
 }
 .lista{
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    margin-right: 52px ;
+    width: 25rem;
     height: 100%;
 }
-
 .buscar input {
     border-style: none;
     background-color: #473734;
     height: 2rem;
+    width: 12rem;
     border-bottom: 2px solid #fff;
 }
 .buscar input hover{
@@ -99,67 +87,61 @@ li {
 .buscar ::placeholder{
     text-align: center;
 }
-
 .cabeca a {
     text-decoration: 1px;
     color: black;
     font-weight: 700;
     text-underline-offset: 0.2rem;
 }
-
 li a:hover {
     border-bottom: 2px solid #bcb09e;
     color: #d3c5b0;
 }
-
+.carrimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .mySlides {
     margin-top: 5%;
     display: none;
-
 }
-
 .mySlides img {
     border-radius: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 12rem;
     width: 64rem;
 }
-
 .fade {
     animation-name: fade;
     animation-duration: 1.0s;
 }
-
 @keyframes fade {
     from {
         opacity: 0
     }
-
     to {
         opacity: 1
     }
 }
-
 ul {
     /* margin-left: 20%; */
     display: flex;
     text-align: center;
     gap: 1px;
 }
-
 .produtos{
     overflow-x: hidden;
     max-width: 1200px;
+    width: 100%;
     padding: 10px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
-
 .produtos .produtos-itens{
     margin-top: 30px;
     display: grid;
@@ -192,8 +174,6 @@ ul {
     text-align: center;
     font-size: 22px;
 }
-
-
 .produtos .produtos-itens .item .botao-item{
     display: block;
     margin: 10px auto;
@@ -204,8 +184,6 @@ ul {
     border-radius: 5px;
     cursor: pointer;
 }
-
-
 .carrinho{
     border: 1px solid #666;
     width: 35%;
@@ -289,8 +267,6 @@ ul {
 .carrinho .carrinho-item .btn-eliminar i{
     pointer-events: none;
 }
-
-
 .carrinho-total{
     background-color: #f3f3f3;
     padding: 30px;
@@ -303,6 +279,7 @@ ul {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .carrinho-total #btn-pagar{
     display: block;
     width: 100%;
@@ -318,10 +295,10 @@ ul {
     cursor: pointer;
     transition: .3s;
 }
+
 .carrinho-total #btn-pagar:hover{
     scale: 1.05;
 }
-
 
 @media screen and (max-width: 850px) {
     .produtos {
@@ -335,7 +312,7 @@ ul {
     }
 }
 
-footer{
+footer {
     width: 100%;
     background-color: #3D2F2B;
     height: 200px; 
@@ -343,6 +320,7 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
+
 .contato{
     color: white;
 }
@@ -358,195 +336,4 @@ footer{
    display: flex;
    flex-direction: column;
    color: white;
-}
-
-#payment-popup{
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.modal {
-    background: #FFFFFF;
-    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 16px;
-    max-width: 450px;
-  }
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-  }
-  .paymentother {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 20px;
-    padding: 10px;
-    justify-content: center;
-  }
-  .paymentother button {
-    height: 55px;
-    background: #F2F2F2;
-    border-radius: 11px;
-    padding: 0;
-    border: 0;
-    outline: none;
-  }
-  .paymentother button svg {
-    height: 18px;
-  }
-  .paymentother button:last-child svg {
-    height: 22px;
-  }
-  .separator {
-    width: calc(100% - 20px);
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    gap: 10px;
-    color: #8B8E98;
-    margin: 0 10px;
-  }
-  .separator p {
-    display: block;
-    text-align: center;
-    font-weight: 600;
-    font-size: 12px;
-    margin: auto;
-  }
-  .separator .line {
-    display: inline-block;
-    width: 100%;
-    height: 1px;
-    border: 0;
-    background-color: #e8e8e8;
-  }
-  .card-info{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .input_container {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  .split {
-    display: grid;
-    grid-template-columns: 4fr 2fr;
-    gap: 15px;
-  }
-  .split input {
-    width: 100%;
-  }
-  .input_label {
-    font-size: 12px;
-    color: #8B8E98;
-    font-weight: 600;
-  }
-  .input_field {
-    width: auto;
-    height: 40px;
-    padding: 0 0 0 16px;
-    border-radius: 9px;
-    outline: none;
-    background-color: #F2F2F2;
-    border: 1px solid #e5e5e500;
-    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-  }
-  .input_field:focus {
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 0px 2px #242424;
-    background-color: transparent;
-  }
-  /* Reset input number styles */
-  .input_field::-webkit-outer-spin-button,
-  .input_field::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  .checkout {
-    position: relative;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 0.05em;
-    border-radius: 0.8em;
-    border: none;
-    background: #473734;
-    color: ghostwhite;
-    overflow: hidden;
-  }
-  .checkout span {
-    position: relative;
-    transition: color 0.6s;
-    display: inline-flex;
-    align-items: center;
-    padding: 0.8em 1.2em 0.8em 1.05em;
-  }
-  .checkout::before,
-  .checkout::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .checkout::before {
-    content: "";
-    background: #000;
-    width: 120%;
-    left: -10%;
-    transform: skew(30deg);
-    transition: transform 0.5s cubic-bezier(0.3, 1, 0.8, 1);
-  }
-  .checkout:hover::before {
-    transform: translate3d(100%, 0, 0);
-  }
-  .checkout:active {
-    transform: scale(0.95);
-  }
-  
-  .popup-olhar, .popup-olhar2, .popup-olhar3, .popup-olhar4, .popup-olhar5, .popup-olhar6, .popup-olhar7, .popup-olhar8, .popup-olhar9, .popup-olhar10, .popup-olhar11, .popup-olhar12, .popup-olhar13, .popup-olhar14 {
-    display: block;
-    margin: 20px auto;
-    cursor: pointer;
-    padding: 6px 10px;
-    border: 0;
-}
-
-.popup-wrapper, .popup-wrapper2, .popup-wrapper3, .popup-wrapper4, .popup-wrapper5, .popup-wrapper6, .popup-wrapper7, .popup-wrapper8, .popup-wrapper9, .popup-wrapper10, .popup-wrapper11, .popup-wrapper12, .popup-wrapper13, .popup-wrapper14 {
-    background-color: rgba(0, 0, 0, .5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.popup, .popup2, .popup3, .popup4, .popup5, .popup6, .popup7, .popup8, .popup9, .popup10, .popup11, .popup12, .popup13, .popup14{
-    text-align: center;
-    width: 300px;
-    margin: 10% auto;
-    padding: 20px;
-    background-color: white;
-    position: relative;
-}
-
-.popup a, .popup2 a, .popup3 a, .popup4 a, .popup5 a, .popup6 a, .popup7 a, .popup8 a, .popup9 a, .popup10 a, .popup11 a, .popup12 a, .popup13 a, .popup14 a{
-    background-color: gainsboro;
-    color: white;
-    text-decoration: none;
-    padding: 6px 10px;
-}
-
-.popup-close, .popup-close2, .popup-close3, .popup-close4, .popup-close5, .popup-close6, .popup-close7, .popup-close8, .popup-close9, .popup-close10, .popup-close11, .popup-close12, .popup-close13, .popup-close14 {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
 }
