@@ -9,12 +9,16 @@ app.use(bodyParser.urlencoded({ extended: false }))
 const path = require('path')
 app.use('/img', express.static('img'))
 app.use('/js', express.static('js'))
+app.use('/css', express.static('css'))
+app.use('/html', express.static('html'))
+
 
 const connection = mysql.createConnection({
   host: '127.0.0.1',
   user: 'root',
-  password: 'root',
-  database: 'bd-node',
+  password: '',
+  database: 'brownow',
+  port: '3307'
 });
 
 connection.connect(function (err) {
@@ -26,16 +30,18 @@ connection.connect(function (err) {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '../BWmain.html')
+  res.sendFile(__dirname + '/main.html')
 })
 
+app.get('/login', (req, res) => {
+  res.sendFile(__dirname + '/html/login.html')
+})
 
 app.post('/login', (req, res) => {
-  let  = req.body.username;
+  let username = req.body.username;
   let password = req.body.password;
-  
 
-  connection.query("SELECT * FROM usuario where email = '" + username +"'", function (err, rows) {
+  connection.query("SELECT * FROM usuarios where nome_usuario = '" + username +"'", function (err, rows) {
     if (!err){
       console.log("Resultado:",rows );
       
