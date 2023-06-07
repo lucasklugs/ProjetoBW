@@ -17,6 +17,12 @@ body {
     width: 100%;
     height: 100px;
 }
+.cabeca a {
+    text-decoration: 1px;
+    color: black;
+    font-weight: 700;
+    text-underline-offset: 0.2rem;
+}
 .logo {
    width: 160px;
    height: 100px;
@@ -31,17 +37,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
 }
 .icons {
     display: flex;
     justify-content: flex-end;
+    width: 120px;
+    height: 20px;
     margin-top: 2%;
-    margin-right: 80px;
+    margin-right: 40px;
     flex: 1;
 }
 .icons img {
     height: 70px;
     width: 130px;
+}
+.icons span {
+    align-items: center;
+    height: 20px;
+    width: 120px;
 }
 .options {
     display: flex;
@@ -68,7 +84,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 52px ;
     width: 25rem;
     height: 100%;
 }
@@ -87,229 +102,16 @@ li {
 .buscar ::placeholder{
     text-align: center;
 }
-.cabeca a {
-    text-decoration: 1px;
-    color: black;
-    font-weight: 700;
-    text-underline-offset: 0.2rem;
-}
+
 li a:hover {
     border-bottom: 2px solid #bcb09e;
     color: #d3c5b0;
-}
-.carrimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.mySlides {
-    margin-top: 5%;
-    display: none;
-}
-.mySlides img {
-    border-radius: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 64rem;
-}
-.fade {
-    animation-name: fade;
-    animation-duration: 1.0s;
-}
-@keyframes fade {
-    from {
-        opacity: 0
-    }
-    to {
-        opacity: 1
-    }
 }
 ul {
     /* margin-left: 20%; */
     display: flex;
     text-align: center;
     gap: 1px;
-}
-.produtos{
-    overflow-x: hidden;
-    max-width: 1200px;
-    width: 100%;
-    padding: 10px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.produtos .produtos-itens{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    grid-gap:30px;
-    grid-row-gap: 30px;
-    width: 100%;
-    transition: .3s;
-}
-.produtos .produtos-itens .item{
-    max-width: 200px;
-    margin: auto;
-    background-color: #ffff;
-    border: 1px solid #666;
-    border-radius: 10px;
-    padding: 20px;
-    transition: .3s;
-}
-.produtos .produtos-itens .item .img-item{
-    width: 100%;
-}
-
-.produtos .produtos-itens .item .titulo-item{
-    display: block;
-    height: 60px;
-    text-align: center;
-}
-.produtos .produtos-itens .item .preco-item{
-    display: block;
-    text-align: center;
-    font-size: 22px;
-}
-.produtos .produtos-itens .item .botao-item{
-    display: block;
-    margin: 10px auto;
-    border: none;
-    background-color: black;
-    color: #fff;
-    padding: 5px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.carrinho{
-    border: 1px solid #666;
-    width: 35%;
-    margin-top: 30px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: auto;
-    position: sticky !important;
-    top: 0;
-    transition: .3s;
-    margin-right: -100%;
-    opacity: 0;
-}
-.carrinho .header-carrinho{
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
-}
-.carrinho .carrinho-item{
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    position: relative;
-    border-bottom: 1px solid #666;
-    padding: 20px;
-}
-.carrinho .carrinho-item img{
-    margin-right: 20px;
-}
-.carrinho .carrinho-item .carrinho-item-titulo{
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.carrinho .carrinho-item .selector-quantidade{
-    display: inline-block;
-    margin-right: 25px;
-}
-.carrinho .carrinho-item .carrinho-item-quantidade{
-    border: none;
-    font-size: 18px;
-    background-color: transparent;
-    display: inline-block;
-    width:30px;
-    padding: 5px;
-    text-align: center;
-}
-.carrinho .carrinho-item .selector-quantidade i{
-    font-size: 18px;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #000;
-    cursor: pointer;
-}
-.carrinho .carrinho-item .carrinho-item-preco{
-    display: inline-block;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-.carrinho .carrinho-item .btn-eliminar{
-    position: absolute;
-    right: 5px;
-    top: 15px;
-    color: #000;
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #000;
-    cursor: pointer;
-    display: block;
-    background: transparent;
-    z-index: 20;
-}
-.carrinho .carrinho-item .btn-eliminar i{
-    pointer-events: none;
-}
-.carrinho-total{
-    background-color: #f3f3f3;
-    padding: 30px;
-}
-.carrinho-total .fila{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.carrinho-total #btn-pagar{
-    display: block;
-    width: 100%;
-    border: none;
-    background: #000;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 18px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    transition: .3s;
-}
-
-.carrinho-total #btn-pagar:hover{
-    scale: 1.05;
-}
-
-@media screen and (max-width: 850px) {
-    .produtos {
-      display: block;
-    }
-    .produtos-itens{
-        width: 100% !important;
-    }
-    .carrinho{
-        width: 100%;
-    }
 }
 
 footer {
@@ -336,4 +138,28 @@ footer {
    display: flex;
    flex-direction: column;
    color: white;
+}
+
+.imagem img{
+    height: 220px;
+    width: 900px;
+    border-end-end-radius: 10%;
+    border-start-start-radius: 10%;
+}
+.imagem{
+    width: 700px;
+    height: 200px;
+    margin-top: 90px;
+    margin-left: 200px;
+}
+.titulo h1{
+    font-family: verdana;
+    padding-top: 6%;
+    font-size: 30px;
+    margin-left: 40%;
+}
+p.texto{
+    font-family: georgia;
+    font-size: 30px;
+  
 }
