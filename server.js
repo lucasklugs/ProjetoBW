@@ -41,7 +41,7 @@ app.post('/login', (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
 
-  connection.query("SELECT * FROM usuarios where nome_usuario = '" + username +"'", function (err, rows) {
+  connection.query("SELECT * FROM usuarios where email_usuario = '" + email +"'", function (err, rows) {
     if (!err){
       console.log("Resultado:",rows );
       
@@ -54,7 +54,7 @@ app.post('/login', (req, res) => {
     } else{
       console.log("Erro: Consulta não realizada", err);}
     });
-    res.send('Mandou para o Servidor');
+    location.href = "../main.html"
 })
 app.listen(3000, () => {
   console.log('Servidor rodando na porta 3000!')
