@@ -167,3 +167,28 @@ ul {
         width: 100% !important;
     }
 }
+footer {
+    width: 100%;
+    background-color: #3D2F2B;
+    height: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contato{
+    color: white;
+}
+.redes-sociais{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.redes-sociais h2{
+    margin-right: 30px;
+}
+.logos{
+   display: flex;
+   flex-direction: column;
+   color: white;
+}
