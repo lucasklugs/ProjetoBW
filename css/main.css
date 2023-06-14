@@ -37,27 +37,34 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-left: auto;
+    margin-left: 35px;
     margin-right: auto;
     padding: 0;
 }
-.icons {
+.icons{
+    position: relative;
     display: flex;
-    justify-content: flex-end;
-    width: 120px;
-    height: 20px;
-    margin-top: 2%;
-    margin-right: 40px;
-    flex: 1;
-}
-.icons img {
-    height: 70px;
-    width: 130px;
-}
-.icons span {
     align-items: center;
-    height: 20px;
-    width: 120px;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 100px;
+    height: 90px;
+}
+.icons .imgconta{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.icons .imgconta img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .options {
     display: flex;

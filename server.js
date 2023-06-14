@@ -37,8 +37,12 @@ app.get('/login', (req, res) => {
   res.sendFile(__dirname + '/html/login.html')
 })
 
+app.get('/login', (req, res) => {
+  res.sendFile(__dirname + '/html/login.html')
+})
+
 app.post('/login', (req, res) => {
-  let username = req.body.username;
+  let email = req.body.email;
   let password = req.body.password;
 
   connection.query("SELECT * FROM usuarios where email_usuario = '" + email +"'", function (err, rows) {
@@ -50,11 +54,14 @@ app.post('/login', (req, res) => {
       }else{
         console.log('Senha errada');
       }
+      if(login == "admin" && senha == "admin"){
+        alert("Sucesso");
+        location.href = "../main.html"
+      }else{
+        alert('Email ou senha incorreto')
+      }
 
-    } else{
-      console.log("Erro: Consulta não realizada", err);}
-    });
-    location.href = "../main.html"
+    }});
 })
 app.listen(3000, () => {
   console.log('Servidor rodando na porta 3000!')
