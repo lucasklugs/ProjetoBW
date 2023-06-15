@@ -458,9 +458,5 @@ popupWrapper14.addEventListener('click', event => {
   }
 })
 
-let icons = document.querySelector('.icons');
-let menu = document.querySelector('.menu');
-icons.onclick = function(){
-  menu.classList.toggle('active');
-}
+
 
