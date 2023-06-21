@@ -119,7 +119,7 @@ body {
 ul {
     display: flex;
     text-align: center;
-    gap
+    gap: 1px;
 }
 
 li {
