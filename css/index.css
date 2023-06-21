@@ -89,8 +89,15 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 
 }
+.icons .imgconta img:hover{
+    overflow: hidden;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
 
 .options {
     display: flex;
@@ -104,14 +111,21 @@ body {
     font-size: 15px;
 }
 
+
 .fundo2 {
     margin-top: -10px;
+}
+
+ul {
+    display: flex;
+    text-align: center;
+    gap
 }
 
 li {
     font-size: 16px;
     font-style: black;
-    width: 100px;
+    width: 130px;
     list-style-type: none;
 }
 
@@ -127,6 +141,7 @@ li {
 li a:hover {
     border-bottom: 2px solid #bcb09e;
     color: #d3c5b0;
+    
 }
 
 .carrimg {
@@ -164,12 +179,6 @@ li a:hover {
     }
 }
 
-ul {
-    /* margin-left: 20%; */
-    display: flex;
-    text-align: center;
-    gap: 1px;
-}
 
 .produtos {
     overflow-x: hidden;

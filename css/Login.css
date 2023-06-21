@@ -26,7 +26,7 @@ input[type="password"] {
   font-size: 14px;
   width: 100%;
   padding: 10px;
-  
+  outline: none;
   border-radius: 5px;
   border: 1px solid #E8E5E0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -84,4 +84,16 @@ input[type="password"] {
 p a{
   font-style: normal black;
   font-size: 15px;
+}
+
+.voltar{
+  height: 40px;
+  width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.voltar:hover svg{
+  overflow: hidden;
+  scale: 1.1;
 }

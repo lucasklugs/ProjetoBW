@@ -6,33 +6,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <form>
-        <div class="imagem">
-            <img src="../img/brownow.png" height="190px" width="400px">
-        </div>
-        <div>
-            <label for="username">Nome:</label>
-            <input type="text" id="username" pattern="[a-zA-Z]*" placeholder="Insira seu nome" name="username" required>
-        </div>
-        <div>
-            <label for="surname">Sobrenome:</label>
-            <input type="text" id="surname"  pattern="[a-zA-Z]*" placeholder="Insira seu sobrenome" name="surname" required>
-        </div>
-        <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Insira seu e-mail" name="email" required>
-        </div>
-        <div>
-            <label for="password">Senha:</label>
-            <input type="password" id="password" placeholder="Insira sua senha" name="password" required>
-        </div>
-        <div>
-            <button type="submit">Cadastrar-se</button>
-        </div>
-    </form>
+    <div class="container">
+        <form action='/cadastro' method="post" role="form">
+            <div>
+                <input type="username" placeholder="Nome" id="username" name="username" font='montserrat' required>
+            </div>
+            <div>
+                <input type="email" placeholder="email" id="email" name="email" font='montserrat' required>
+            </div>
+            <div>
+                <input type="date" placeholder="data de nascimento" id="nascimento" name="nascimento" font='montserrat'
+                    required>
+            </div>
+            <div>
+                <input type="password" placeholder="Insira sua senha" id="password" name="password" required>
+            </div>
+            <button type="submit" class="submit" style="cursor: pointer;">
+                <span>Cadastre-se</span>
+            </button>
+            <div class="voltar">
+                <a href="login.html">
+                    <svg width="33" height="33" fill="#463535" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.329 11v2H7.5l3.243 3.243-1.414 1.414-5.657-5.656 5.657-5.657 1.414 1.414L7.5 11.001h12.83Z">
+                        </path>
+                    </svg></a>
+            </div>
+        </form>
+    </div>
 </body>
+<script src="../js/bw.js"></script>
 
 </html>

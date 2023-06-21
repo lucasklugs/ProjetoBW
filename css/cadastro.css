@@ -1,77 +1,112 @@
-@font-face {
-  font-family: fontb;
-  src: url(TTDrugsTrialRegular.otf);
-}
-
 body {
-  font-family: fontb;
+  font-family: 'Montserrat';
   background-color: #E8E5E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
 form {
-  margin: 50px auto;
+  margin: 0 auto; 
   padding: 20px;
-  max-width: 400px;
-  background-color: #3D2F2B;
+  height: 100%;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
 }
-
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #E8E5E0;
-}
-
-input:invalid {
-  animation: shake .2s ease-in-out 0s 2;
-  color: solid 10px #dc2626;
-}
-
-@keyframes shake {
-  0% {
-    transform: translateX(0rem)
-  }
-
-  25% {
-    transform: translateX(-0.5rem)
-  }
-
-  75% {
-    transform: translatex(0.5rem)
-  }
-
-  100% {
-    transform: translatex(0rem)
-  }
-}
-
+input[type="username"],
 input[type="email"],
+input[type="date"],
 input[type="text"],
-input[type="password"],
-input[type="date"] {
-  font-family: fontb;
+input[type="password"] {
   display: block;
+  font-family: 'Montserrat';
+  font-size: 14px;
   width: 100%;
   padding: 10px;
-  font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  outline: none;
+  border: 1px solid #E8E5E0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   margin-bottom: 20px;
 }
-
-button[type="submit"] {
-  background-color: #40a009;
-  color: #fff;
-  padding: 10px;
-  border: none;
+input[type="date"]{
+  display: block;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  width: 100%;
+  padding: 0.5em 2.0em 0.5em 2.0em;
   border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
+  outline: none;
+  border: 1px solid #E8E5E0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.submit {
+  position: relative;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  border: none;
+  background: #473734;
+  color: ghostwhite;
+  overflow: hidden;
 }
 
-button[type="submit"]:hover {
-  background-color: #274e07;
+.submit span {
+  position: relative;
+  transition: color 0.6s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 6.0em 0.8em 6.0em;
+}
+
+.submit::before,
+.submit::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.submit::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.5s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.submit:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.submit:active {
+  transform: scale(0.95);
+}
+
+p a{
+  font-style: normal black;
+  font-size: 15px;
+}
+.voltar{
+  height: 40px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.voltar:hover svg{
+  overflow: hidden;
+  scale: 1.1;
 }

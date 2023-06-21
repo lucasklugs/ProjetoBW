@@ -458,5 +458,6 @@ popupWrapper14.addEventListener('click', event => {
   }
 })
 
-
+var dateControl = document.querySelector('input[type="date"]');
+dateControl.value = '01-06-2017';
 
