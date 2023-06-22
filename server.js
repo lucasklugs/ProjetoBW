@@ -30,7 +30,7 @@ connection.connect(function (err) {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/main.html')
+  res.sendFile(__dirname + '/index.html')
 })
 
 app.get('/login', (req, res) => {
@@ -56,7 +56,7 @@ app.post('/login', (req, res) => {
       }
       if(login == "admin" && senha == "admin"){
         alert("Sucesso");
-        location.href = "../main.html"
+        location.href = "../index.html"
       }else{
         alert('Email ou senha incorreto')
       }

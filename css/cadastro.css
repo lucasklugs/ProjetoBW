@@ -9,14 +9,29 @@ body {
 }
 
 form {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
   margin: 0 auto; 
   padding: 20px;
   height: 100%;
   border-radius: 5px;
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
+   
+  border: 3px #000;
+  border-radius: 20px;
+  background-color: #312926;
+}
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 160px;
+}
+.head img{
+  width: 240px;
+  height: 140px;
 }
 input[type="username"],
 input[type="email"],
@@ -106,7 +121,10 @@ p a{
   align-items: center;
   justify-content: flex-start;
 }
-.voltar:hover svg{
+.voltar svg{
+  margin-top: 30%;
+}
+.voltar svg:hover {
   overflow: hidden;
   scale: 1.1;
 }

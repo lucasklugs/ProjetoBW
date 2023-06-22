@@ -9,16 +9,29 @@ body {
 }
 
 form {
-  margin: 0 auto; 
-  padding: 20px;
-  height: 100%;
-  border-radius: 5px;
   display: flex; 
   flex-direction: column; 
   align-items: center; 
   justify-content: center; 
+  margin: 0 auto; 
+  padding: 20px;
+  height: 100%;
+  border: 3px #000;
+  border-radius: 20px;
+  background-color: #312926;
 }
-input[type="username"],
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 150px;
+}
+.head img{
+  width: 250px;
+  height: 140px;
+}
+input[type="email"],
 input[type="text"],
 input[type="password"] {
   display: block;
@@ -81,9 +94,18 @@ input[type="password"] {
   transform: scale(0.95);
 }
 
-p a{
-  font-style: normal black;
+p {
+  color: rgb(238, 238, 234);
   font-size: 15px;
+}
+p a {
+  color: #b8afa2;
+  text-decoration: none;
+  
+}
+p a:hover {
+  color: #d3c5b0;
+  border-bottom: 1.5px solid #dfd7ca;
 }
 
 .voltar{
@@ -93,7 +115,7 @@ p a{
   align-items: center;
   justify-content: flex-start;
 }
-.voltar:hover svg{
+.voltar svg:hover {
   overflow: hidden;
   scale: 1.1;
 }

@@ -118,8 +118,8 @@ body {
 
 ul {
     display: flex;
+    justify-content: space-between ;
     text-align: center;
-    gap: 1px;
 }
 
 li {
@@ -543,7 +543,7 @@ footer {
     font-size: 18px;
     letter-spacing: 0.05em;
     border-radius: 0.8em;
-    border: none;
+    box-shadow: 10px;
     background: #473734;
     color: ghostwhite;
     overflow: hidden;
