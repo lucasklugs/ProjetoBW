@@ -684,10 +684,43 @@ width: 10px;
     cursor: pointer;
 }
 
+
+@-webkit-keyframes animacaobw {
+    from {
+        -webkit-transform: rotate(4deg)
+    }
+
+    to {
+        -webkit-transform: rotate(-4deg)
+    }
+}
+
+@keyframes animacaobw {
+    from {
+        transform: rotate(4deg)
+    }
+
+    to {
+        transform: rotate(-4deg)
+    }
+}
+
+#animacaobw {
+    -webkit-animation: animacaobw 2s alternate infinite ease-in-out;
+    animation: animacaobw 2s alternate infinite ease-in-out;
+}
+
+#animacaobw {
+    min-height: 320px
+}
+
+#animacaobw img {
+    position: absolute;
+}
+
 .footer {
     background-color: #3D2F2B;
     padding: 3rem;
-    border-top: 0.6px solid #000;
     height: 100px;
     margin-top: 20%;
 
@@ -701,7 +734,7 @@ button {
 
 .contato button {
     font-family: 'Carter One';
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     letter-spacing: 3px;
     text-shadow: -1px -1px 0px var(--background),
@@ -714,7 +747,7 @@ button {
 
 .termos button {
     font-family: 'Carter One';
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     letter-spacing: 3px;
     text-shadow: -1px -1px 0px var(--background),
@@ -724,15 +757,15 @@ button {
     color: whitesmoke;
 }
 
-.rastreamento button {
+.trocas button {
     font-family: 'Carter One';
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     letter-spacing: 3px;
     text-shadow: -1px -1px 0px var(--background),
         3px 3px 0px var(--background),
         6px 6px 0px #3D2F2C;
-    margin-left: 70%;
+    margin-left: 65%;
     color: whitesmoke;
 }
 
@@ -751,15 +784,9 @@ button {
     color: #A78983
 }
 
-.rastreamento button:hover {
+.trocas button:hover {
     overflow: hidden;
     scale: 1.1;
     transition: 0.3s;
     color: #A78983
 }
-
-.logobw img{
-width: 4px;
-height: 6px;
-}
-
