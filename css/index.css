@@ -710,21 +710,18 @@ width: 10px;
     animation: animacaobw 2s alternate infinite ease-in-out;
 }
 
-#animacaobw {
-    min-height: 320px
-}
-
-#animacaobw img {
-    position: absolute;
-}
 
 .footer {
     background-color: #3D2F2B;
     padding: 3rem;
     height: 100px;
     margin-top: 20%;
-
-
+}
+.containercake img{
+    width: 20%;
+    height: 40%;
+    position:relative;
+	left:5%;
 }
 
 button {
