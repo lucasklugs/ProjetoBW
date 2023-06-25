@@ -18,7 +18,7 @@ const connection = mysql.createConnection({
   user: 'root',
   password: '',
   database: 'brownow',
-  port: '3307'
+  port: '3306'
 });
 
 connection.connect(function (err) {
@@ -30,17 +30,12 @@ connection.connect(function (err) {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html')
+  res.sendFile(__dirname + '../index.html')
 })
 
 app.get('/login', (req, res) => {
   res.sendFile(__dirname + '/html/login.html')
 })
-
-app.get('/login', (req, res) => {
-  res.sendFile(__dirname + '/html/login.html')
-})
-
 app.post('/login', (req, res) => {
   let email = req.body.email;
   let password = req.body.password;
@@ -54,9 +49,9 @@ app.post('/login', (req, res) => {
       }else{
         console.log('Senha errada');
       }
-      if(login == "admin" && senha == "admin"){
+      if(login == "admin" && password == "admin"){
         alert("Sucesso");
-        location.href = "../index.html"
+        location.href = "/index.html";
       }else{
         alert('Email ou senha incorreto')
       }
