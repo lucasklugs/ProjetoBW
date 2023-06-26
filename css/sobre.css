@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
 body {
     background-color: #E8E5E0;
 }
@@ -191,12 +192,13 @@ footer {
     margin-left: 200px;
 }
 .titulo h1{
-    font-family: verdana;
+    font-family: 'Rowdies';
     padding-top: 6%;
     font-size: 30px;
    margin: auto;
    width: 60%;
    display: block;
+   color: #3D2F2B;
 }
 p.texto{
     font-family: georgia;

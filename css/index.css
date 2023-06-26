@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
 
 body {
     background-color: #E8E5E0;
@@ -714,7 +715,7 @@ width: 10px;
 .footer {
     background-color: #3D2F2B;
     padding: 3rem;
-    height: 100px;
+    height: 50px;
     margin-top: 20%;
 }
 .containercake img{
@@ -730,38 +731,30 @@ button {
 }
 
 .contato button {
-    font-family: 'Carter One';
+    font-family: 'Rowdies';
     font-size: 20px;
     cursor: pointer;
     letter-spacing: 3px;
-    text-shadow: -1px -1px 0px var(--background),
-        3px 3px 0px var(--background),
-        6px 6px 0px #3D2F2C;
     margin-left: 25%;
     color: whitesmoke;
 }
 
 
 .termos button {
-    font-family: 'Carter One';
+    font-family: 'Rowdies';
     font-size: 20px;
     cursor: pointer;
     letter-spacing: 3px;
-    text-shadow: -1px -1px 0px var(--background),
-        3px 3px 0px var(--background),
-        6px 6px 0px #3D2F2C;
-    margin-left: 40%;
+    margin-left: 38%;
     color: whitesmoke;
+    
 }
 
 .trocas button {
-    font-family: 'Carter One';
+    font-family: 'Rowdies';
     font-size: 20px;
     cursor: pointer;
     letter-spacing: 3px;
-    text-shadow: -1px -1px 0px var(--background),
-        3px 3px 0px var(--background),
-        6px 6px 0px #3D2F2C;
     margin-left: 65%;
     color: whitesmoke;
 }
