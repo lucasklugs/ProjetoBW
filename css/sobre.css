@@ -139,12 +139,6 @@ li a:hover {
     
 }
 
-.carrimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 
 li a:hover {
     border-bottom: 2px solid #bcb09e;
@@ -179,18 +173,8 @@ footer {
    color: white;
 }
 
-.imagem img{
-    height: 220px;
-    width: 900px;
-    border-end-end-radius: 10%;
-    border-start-start-radius: 10%;
-}
-.imagem{
-    width: 700px;
-    height: 200px;
-    margin-top: 90px;
-    margin-left: 200px;
-}
+
+
 .titulo h1{
     font-family: 'Rowdies';
     padding-top: 6%;
@@ -207,56 +191,80 @@ p.texto{
   
 }
 
-.sobrenos{
-    width: 80%;
-    display: block;
+
+.footer {
+    background-color: #3D2F2B;
+    padding: 3rem;
+    height: 30px;
+    margin-top: 10%;
+}
+/* .containercake img{
+    width: 20%;
+    height: 30%;
+    position:relative; */
+	/* left:0%; */
+/* } */
+
+button {
+    background-color: #3D2F2B;
+    position: absolute;
+    margin-left: 20%;
+    
+}
+
+.contato button {
+    font-family: 'Rowdies';
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    margin-left: 10%;
+    color: whitesmoke;
+}
+
+
+.termos button {
+    font-family: 'Rowdies';
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    margin-left: 36%;
+    color: whitesmoke;
+}
+
+.trocas button {
+    font-family: 'Rowdies';
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    margin-left: 60%;
+    color: whitesmoke;
+}
+
+.contato button:hover {
+    overflow: hidden;
+    scale: 1.1;
+    transition: 0.3s;
+    color: #A78983;
 
 }
-.btn_social { 
-	width:100%; 
-	float:left; 
-	display:flex; 
-	margin:auto; 
+
+.termos button:hover {
+    overflow: hidden;
+    scale: 1.1;
+    transition: 0.3s;
+    color: #A78983
 }
-.btn_social ul  { 
-	width:auto; 
-	margin:auto; 
-	float:left; 
-	display:block; 
+
+.trocas button:hover {
+    overflow: hidden;
+    scale: 1.1;
+    transition: 0.3s;
+    color: #A78983
 }
-.btn_social ul li  { 
-	position:relative; 
-	background:#555555; 
-	list-style:none; 
-	float:left; 
-	margin:5px; 
-	z-index:1; 
-	overflow:hidden; 
-	border-radius:3px; 
-	font-size:1.5em; 
-	text-align:center; 
-}
-.btn_social ul li a  { 
-	width:50px; 
-	height:50px; 
-	line-height:53px; 
-	display:block; 
-	text-decoration:none; 
-	color:#fff; 
-	transition:.4s;
-}
-.btn_social ul li::before { 
-	transition:0.4s; 
-	position:absolute; 
-	content:''; 
-	width:100%; 
-	height:100%; 
-	top:90%; 
-	left:0; 
-	background:#2fcacf; 
-	z-index:-1; 
-	transform: scale(1); 
-	transition:.4s; 
-}
-.btn_social ul li:hover::before { transition:0.4s; top:0%; }
-.btn_social ul li a:hover       { color:#555555; }
+
+/* .redessociais{
+    display: flex;
+    position: fixed;
+    width: 30px;
+    height: 40px;
+} */
