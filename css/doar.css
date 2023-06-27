@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
     background-color: #E8E5E0;
@@ -7,38 +6,44 @@ body {
 }
 
 * {
-    font-family: 'Montserrat';
+    font-family: 'Verdana';
     margin: 0;
     border: 0;
     padding: 0;
 }
-.navbar{
+
+.navbar {
     width: 100%;
     height: 100px;
     background-color: #3D2F2C;
     display: flex;
 }
+
+.cabeca {
+    width: 100%;
+    height: 100px;
+}
+
 .cabeca a {
     text-decoration: 1px;
     color: #3D2F2C;
     font-weight: 700;
     text-underline-offset: 0.2rem;
-    font-family: 'Geologica' ;
+    font-family: 'Geologica';
     font-size: 17px;
     font-weight: 400;
 }
-.cabeca{
-    width: 100%;
-    height: 100px;
-}
+
 .logo {
-   width: 160px;
-   height: 100px;
-}
-.logo img{
     width: 160px;
     height: 100px;
 }
+
+.logo img {
+    width: 160px;
+    height: 100px;
+}
+
 .buscar {
     width: 80%;
     height: 90%;
@@ -59,13 +64,15 @@ body {
     border: none;
     border-radius: 4px;
     padding: 0 60px 0 20px;
-    
+
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
-.buscar.active input{
+
+.buscar.active input {
     border-radius: 5px 5px 0 0;
-  }
-  .icons {
+}
+
+.icons {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -80,6 +87,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
 }
+
 .icons .imgconta img {
     cursor: pointer;
     top: 0;
@@ -87,14 +95,16 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 
 }
-.icons .imgconta img:hover{
+
+.icons .imgconta img:hover {
     overflow: hidden;
     scale: 1.1;
     transition: 0.3s;
 }
+
 
 .options {
     display: flex;
@@ -104,52 +114,42 @@ body {
     height: 2.2rem;
     width: 100%;
     font-style: #0000;
-    color: #473734;
+    color: #3D2F2C;
     font-size: 15px;
 }
+
+
 .fundo2 {
     margin-top: -10px;
 }
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
 li {
     font-size: 16px;
-    font-style: black;
-    width: 100px;
+    width: 130px;
     list-style-type: none;
 }
-.lista{
+
+.lista {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 52px ;
     width: 25rem;
     height: 100%;
 }
-.buscar input {
-    border-style: none;
-    background-color: #473734;
-    height: 2rem;
-    width: 12rem;
-    border-bottom: 2px solid #fff;
-}
-.buscar input hover{
-    border-bottom: 1px solid #bcb09e;
-    padding-bottom: 7px;
-    color: #d3c5b0;
-}
-.buscar ::placeholder{
-    text-align: center;
-}
-.cabeca a {
-    text-decoration: 1px;
-    color: black;
-    font-weight: 700;
-    text-underline-offset: 0.2rem;
-}
+
 li a:hover {
     border-bottom: 2px solid #bcb09e;
     color: #d3c5b0;
+
 }
+
 .carrimg {
     display: flex;
     justify-content: center;
@@ -220,6 +220,22 @@ ul {
     .instituicao-card{
         width: 100% !important;
     }
+}
+
+button{
+    font-size: 30px;
+    background-color: #473734;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.confirmar{
+    display: flex;
+    justify-content: end;
 }
 footer {
     width: 100%;
