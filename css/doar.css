@@ -150,12 +150,6 @@ li a:hover {
 
 }
 
-.carrimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 ul {
     /* margin-left: 20%; */
     display: flex;
@@ -223,13 +217,13 @@ ul {
 }
 
 button{
-    font-size: 30px;
+    font-size: 20px;
     background-color: #473734;
     color: white;
     border-radius: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     cursor: pointer;
 }
 
