@@ -716,10 +716,13 @@ li a:hover {
 
 
 .footer {
+    display: flex;
+    justify-content: center;
     background-color: #3D2F2B;
     padding: 3rem;
     height: 30px;
     margin-top: 10%;
+    flex-direction: column;
 }
 .containercake img{
     width: 20%;
@@ -728,66 +731,82 @@ li a:hover {
 	/* left:0%; */
 }
 
-button {
+.container_footer{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 1140px;
     background-color: #3D2F2B;
-    position: absolute;
-    margin-left: 20%;
-    
+    margin-left: 10%;
 }
 
-.contato button {
+.container_footer a{
+    text-decoration: none;
+}
+
+.contato-link {
     font-family: 'Rowdies';
     font-size: 20px;
-    cursor: pointer;
     letter-spacing: 3px;
-    margin-left: 20%;
-    color: whitesmoke;
-}
-
-
-.termos button {
-    font-family: 'Rowdies';
-    font-size: 20px;
-    cursor: pointer;
-    letter-spacing: 3px;
-    margin-left: 36%;
-    color: whitesmoke;
-}
-
-.trocas button {
-    font-family: 'Rowdies';
-    font-size: 20px;
-    cursor: pointer;
-    letter-spacing: 3px;
-    margin-left: 60%;
-    color: whitesmoke;
-}
-
-.contato button:hover {
+    display: inline-block;
     overflow: hidden;
-    scale: 1.1;
-    transition: 0.3s;
+    position: relative;
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+.termos-link {
+    font-family: 'Rowdies';
+    font-size: 20px;
+    letter-spacing: 3px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.trocas-link{
+    font-family: 'Rowdies';
+    font-size: 20px;
+    letter-spacing: 3px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.contato-link:hover {
+    transform: scale(1.1);
     color: #A78983;
 
 }
 
-.termos button:hover {
-    overflow: hidden;
-    scale: 1.1;
-    transition: 0.3s;
+.termos-link:hover {
+    transform: scale(1.1);
     color: #A78983
 }
 
-.trocas button:hover {
-    overflow: hidden;
-    scale: 1.1;
-    transition: 0.3s;
+.trocas-link:hover {
+    transform: scale(1.1);
     color: #A78983
 }
-
-.redessociais{
+.direitos{
+    color: #bcb09e;
+    font-size:9px;
+    margin-top: 25px;
+    margin-left: 35%;
     display: flex;
-    position: fixed;
-    width: 30px;
-    height: 40px;
+    align-items: center;
+   
+}
+ .direitos img{
+    width: 7%;
+    display:flex;
+
 }
