@@ -224,10 +224,6 @@ document.getElementById('btn-pagar').addEventListener('click', function () {
   document.getElementById('payment-popup').style.display = 'block';
 });
 
-document.getElementById('btn-pagar').addEventListener('click', function () {
-  document.getElementById('payment-popup').style.display = 'block';
-});
-
 document.querySelector('form').addEventListener('submit', function (event) {
   event.preventDefault();
 
