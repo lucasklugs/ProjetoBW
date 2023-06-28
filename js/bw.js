@@ -236,3 +236,4 @@ document.querySelector('form').addEventListener('submit', function (event) {
 var dateControl = document.querySelector('input[type="date"]');
 dateControl.value = '01-06-2017';
 
+
