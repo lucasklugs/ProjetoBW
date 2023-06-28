@@ -554,7 +554,14 @@ li a:hover {
     overflow: hidden;
 }
 
-.checkout span,
+.checkout span {
+    position: relative;
+    transition: color 0.6s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
 .checkout2 span {
     position: relative;
     transition: color 0.6s;
@@ -596,6 +603,54 @@ li a:hover {
 .checkout2:active {
     transform: scale(0.95);
 }
+
+#instituicoes-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.modal2 {
+    background: #FFFFFF;
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    max-width: 450px;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.instituicoes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.instituicoes button {
+    height: 55px;
+    background: #F2F2F2;
+    border-radius: 11px;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+.instituicoes button svg {
+    height: 18px;
+}
+
+.instituicoes button:last-child svg {
+    height: 22px;
+}
+
 
 @-webkit-keyframes animacaobw {
     from {
