@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Fira+Sans:wght@300;400;500&display=swap');
+
+
 body {
     background-color: #E8E5E0;
     width: 100%;
@@ -6,7 +11,7 @@ body {
 }
 
 * {
-    font-family: 'Verdana';
+    font-family: 'Fira Sans';
     margin: 0;
     border: 0;
     padding: 0;
@@ -56,7 +61,7 @@ body {
 }
 
 .buscar input {
-    font-family: 'Verdana';
+    font-family: 'Fira Sans';
     font-size: 13px;
     height: 2rem;
     width: 12rem;
@@ -149,110 +154,99 @@ li a:hover {
     color: #d3c5b0;
 
 }
-
-ul {
-    /* margin-left: 20%; */
+.footer {
     display: flex;
-    text-align: center;
-    gap: 1px;
-}
-.instituicoes{
-    overflow-x: hidden;
-    max-width: 1200px;
-    width: 100%;
-    padding: 10px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.instituicoes .instituicao-card{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    grid-gap:30px;
-    grid-row-gap: 30px;
-    width: 100%;
-}
-.instituicoes .instituicao-card .instituicao{
-    max-width: 200px;
-    margin: auto;
-    background-color: #ffff;
-    border: 1px solid #666;
-    border-radius: 10px;
-    padding: 20px;
-}
-.instituicoes .instituicao-card .instituicao .img-inst{
-    width: 100%;
-}
-
-.instituicoes .instituicao-card .instituicao .titulo-inst{
-    display: block;
-    font-size: 20px;
-    height: 90px;
-    text-align: center;
-}
-.instituicoes .instituicao-card .instituicao{
-    display: block;
-    text-align: center;
-    font-size: 22px;
-}
-.instituicoes .instituicao-card .instituicao{
-    display: block;
-    margin: 10px auto;
-    border: none;
-    background-color: white;
-    color: black;
-    padding: 5px 15px;
-    border-radius: 10px;
-}
-
-@media screen and (max-width: 850px) {
-    .instituicoes {
-      display: block;
-    }
-    .instituicao-card{
-        width: 100% !important;
-    }
-}
-
-button{
-    font-size: 20px;
-    background-color: #473734;
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    padding: 10px 10px;
-    cursor: pointer;
-}
-
-.confirmar{
-    display: flex;
-    justify-content: end;
-}
-footer {
-    width: 100%;
+    justify-content: center;
     background-color: #3D2F2B;
-    height: 200px; 
+    padding: 3rem;
+    height: 80px;
+    margin-top: 10%;
+    flex-direction: column;
+}
+/* /* .containercake img{
+    width: 20%;
+    height: 30%;
+    position:relative;
+	/* left:0%; */
+
+
+.container_footer{
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    height: 100%;
+    width: 1140px;
+    background-color: #3D2F2B;
+    margin-left: 10%;
+    margin-top: 20px;
 }
 
-.contato{
-    color: white;
+.container_footer a{
+    text-decoration: none;
 }
-.redes-sociais{
-    color: white;
+
+.contato-link {
+    font-family: 'Rowdies';
+    font-size: 20px;
+    letter-spacing: 3px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+.termos-link {
+    font-family: 'Rowdies';
+    font-size: 20px;
+    letter-spacing: 3px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.trocas-link{
+    font-family: 'Rowdies';
+    font-size: 20px;
+    letter-spacing: 3px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.contato-link:hover {
+    transform: scale(1.1);
+    color: #A78983;
+
+}
+
+.termos-link:hover {
+    transform: scale(1.1);
+    color: #A78983
+}
+
+.trocas-link:hover {
+    transform: scale(1.1);
+    color: #A78983
+}
+.direitos{
+    color: #bcb09e;
+    font-size:15px;
+    margin-top: 25px;
+    margin-left: 30%;
     display: flex;
     align-items: center;
+   
 }
-.redes-sociais h2{
-    margin-right: 30px;
-}
-.logos{
-   display: flex;
-   flex-direction: column;
-   color: white;
+ .direitos img{
+    width: 10%;
+    display:flex;
+
 }
