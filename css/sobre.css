@@ -157,60 +157,76 @@ li a:hover {
 
 .titulo h1 {
     margin-top: 5%;
-    margin-left: 45%;
     font-family: 'Rowdies';
     font-weight: 400;
     color: #3D2F2C;
+}
+
+.text_sobre {
+    width: 100%;
+    text-align: center;
 }
 
 .text_sobre p {
     margin-top: 5%;
-    margin-left: 20%;
     font-family: 'Fira Sans';
     color: #000;
     letter-spacing: 0.5px;
     line-height: 25px;
-    
+
 }
+
+.titulo2 {
+    text-align: center;
+}
+
 .titulo2 h1 {
     margin-top: 5%;
-    margin-left: 38%;
     font-family: 'Rowdies';
     font-weight: 400;
     color: #3D2F2C;
 }
+
 .image-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
     margin-top: 10%;
-  }
-  
-  .image-container .image-item {
-    flex-basis: 25%;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  .image-container .image-item img {
-    height: auto;
-    border-radius: 5px;
-    border-color: #3D2F2B;
-    width: 60%;
-    border-style:inset;
-    box-shadow: #3D2F2C 0px 4px 6px;
-  }
-  
-  .image-container .image-item .image-caption {
-    margin-top: 5px;
+    height: 30rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.image-container .image-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px;
+    overflow: hidden;
+
+}
+
+.image-container .image-item img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container .image-item:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.image-container .image-item .image-caption {
     font-family: 'Rowdies';
     color: #3D2F2C;
-  }
+}
 
-    .image-container .image-item:hover {
-      transform: scale(1.1);
-    }
 
 
 .footer {

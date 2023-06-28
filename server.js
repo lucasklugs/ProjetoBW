@@ -18,7 +18,7 @@ const connection = mysql.createConnection({
   user: 'root',
   password: '',
   database: 'brownow',
-  port: '3306'
+  port: '3307'
 });
 
 connection.connect(function (err) {
