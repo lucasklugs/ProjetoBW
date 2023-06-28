@@ -281,8 +281,6 @@ li a:hover {
     opacity: 0;
     top:0;
     right:0;
-
-    
 }
 
 .carrinho .header-carrinho {
@@ -324,9 +322,6 @@ li a:hover {
     width: 30px;
     padding: 5px;
     text-align: center;
-}
-.carrinho-itens{
-    min-height: 195px;
 }
 
 .carrinho .carrinho-item .selector-quantidade i {
