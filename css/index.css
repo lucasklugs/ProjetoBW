@@ -326,6 +326,10 @@ li a:hover {
     text-align: center;
 }
 
+.carrinho-itens{
+    min-height: 195px;
+}
+
 .carrinho .carrinho-item .selector-quantidade i {
     font-size: 18px;
     width: 32px;
