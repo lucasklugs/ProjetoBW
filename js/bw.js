@@ -233,6 +233,15 @@ document.querySelector('form').addEventListener('submit', function (event) {
   document.getElementById('payment-popup').style.display = 'none';
 });
 
+document.getElementById('btn-instituicao').addEventListener('click', function () {
+  document.getElementById('instituicao-popup').style.display = 'block';
+});
+
+document.getElementById('btn-confirmar2').addEventListener('click', function () {
+  document.getElementById('instituicao-popup').style.display = 'none';
+  document.getElementById('payment-popup').style.display = 'block';
+});
+
 var dateControl = document.querySelector('input[type="date"]');
 dateControl.value = '01-06-2017';
 
