@@ -23,18 +23,21 @@ const connection = mysql.createConnection({
 
 connection.connect(function (err) {
   if (!err){
-    console.log("Conexão como o Banco realizada com sucesso!!!");
+    console.log("connected with database.");
   } else{
-    console.log("Erro: Conexão NÃO realizada", err);
+    console.log("Error: connection", err);
   }
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '../index.html')
+  res.sendFile(__dirname + '/index.html')
 })
 
 app.get('/login', (req, res) => {
   res.sendFile(__dirname + '/html/login.html')
+})
+app.get('/cadastro', (req, res) => {
+  res.sendFile(__dirname + '/html/cadastro.html')
 })
 app.post('/login', (req, res) => {
   let email = req.body.email;
@@ -51,7 +54,7 @@ app.post('/login', (req, res) => {
       }
       if(login == "admin" && password == "admin"){
         alert("Sucesso");
-        location.href = "/index.html";
+        location.href = "../index.html";
       }else{
         alert('Email ou senha incorreto')
       }
@@ -59,5 +62,5 @@ app.post('/login', (req, res) => {
     }});
 })
 app.listen(3000, () => {
-  console.log('Servidor rodando na porta 3000!')
+  console.log('Server online')
 })
