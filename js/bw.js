@@ -41,10 +41,10 @@ function ready() {
     button.addEventListener("click", eliminarItemCarrinho);
   }
 
-  var botonesSomarQuantidade =
+  var botaoSomarQuantidade =
     document.getElementsByClassName("somar-quantidade");
-  for (var i = 0; i < botonesSomarQuantidade.length; i++) {
-    var button = botonesSomarQuantidade[i];
+  for (var i = 0; i < botaoSomarQuantidade.length; i++) {
+    var button = botaoSomarQuantidade[i];
     button.addEventListener("click", somarQuantidade);
   }
 
@@ -62,19 +62,18 @@ function ready() {
     button.addEventListener("click", adicionarAoCarrinhoClicked);
   }
 
-  document
-    .getElementById("btn-pagar")[0]
-    .addEventListener("click", pagarClicked);
+  document.getElementsByClassName('btn-confirmar')[0].addEventListener('click',confirmarClicked);
 }
-function pagarClicked() {
+function confirmarClicked(){
   alert("Obrigado pela compra!");
-  var carrinhoItens = document.getElementsByClassName("carrinho-itens")[0];
-  while (carrinhoItens.hasChildNodes()) {
+  var carrinhoItens = document.getElementsByClassName('carrinho-itens')[0];
+  while (carrinhoItens.hasChildNodes()){
     carrinhoItens.removeChild(carrinhoItens.firstChild);
   }
   atualizarTotalCarrinho();
   ocultarCarrinho();
 }
+
 function adicionarAoCarrinhoClicked(event) {
   var button = event.target;
   var item = button.parentElement;
@@ -221,7 +220,7 @@ function atualizarTotalCarrinho() {
 }
 
 document.getElementById('btn-pagar').addEventListener('click', function () {
-  document.getElementById('payment-popup').style.display = 'block';
+document.getElementById('payment-popup').style.display = 'block';
 });
 
 document.querySelector('form').addEventListener('submit', function (event) {
