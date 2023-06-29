@@ -39,9 +39,28 @@ app.get('/login', (req, res) => {
 app.get('/cadastro', (req, res) => {
   res.sendFile(__dirname + '/html/cadastro.html')
 })
+app.post('/cadastro', (req, res) => {
+  let name = req.body.name;
+  let email = req.body.email;
+  let password = req.body.password;
+  
 app.post('/login', (req, res) => {
   let email = req.body.email;
   let password = req.body.password;
+
+
+
+  connection.query("INSERT INTO user(user_name, user_email, user_password) VALUES  ('" + name + "', '" + email + "','" + password + "')", function (err, rows, fields) {
+      console.log("Results:", rows);
+      if (!err) {
+          console.log("Cadastro feito com sucesso!!");
+          res.sendFile(__dirname + '/html/cadastro.html')
+      } else {
+          console.log("Erro: Consulta não realizada", err);
+          res.send('Login failed');
+      }
+  });
+});
 
 
   connection.query("SELECT * FROM user where email_user = '" + email +"'", function (err, rows) {
