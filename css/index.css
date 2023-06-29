@@ -578,7 +578,7 @@ li a:hover {
     scale: 1.05;
 }
 
-#btn-confirmar {
+.btn-confirmar {
     width: 100%;
     height: 40px;
     border: none;
@@ -594,7 +594,7 @@ li a:hover {
     transition: .3s;
 }
 
-#btn-confirmar:hover {
+.btn-confirmar:hover {
     scale: 1.05;
 }
 
