@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Fira+Sans:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caprasimo&family=Lalezar&display=swap');
+
 
 
 body {
@@ -193,7 +192,7 @@ li a:hover {
 }
 
  .item :hover{
-   transform: scale(1.1);
+   /* transform: scale(1.1); */
    overflow-x: hidden;
    cursor:default;
 }
@@ -204,6 +203,11 @@ li a:hover {
     margin: auto;
     display: flex;
     align-items: center;
+   
+}
+img .descricao{
+    width: 10px;
+    height: 10px;
 }
 
 .produtos .produtos-itens {
@@ -235,6 +239,7 @@ li a:hover {
     height: 60px;
     text-align: center;
     color: black;
+    font-family: 'Fira Sans';
 }
 
 .produtos .produtos-itens .item .preco-item {
@@ -242,6 +247,8 @@ li a:hover {
     text-align: center;
     font-size: 23px;
     color: black;
+    font-family: 'Fira Sans';
+    font-weight: 400;
 
 }
 
@@ -272,9 +279,7 @@ li a:hover {
 
 
 .carrinho {
-    border: 1px solid #666;
     width: 35%;
-    border-radius: 10px;
     overflow: hidden;
     position:-webkit-sticky; 
     position: fixed;
@@ -283,13 +288,18 @@ li a:hover {
     opacity: 0;
     top:0;
     right:0;
+    background-color: #FFF;
 }
 
 .carrinho .header-carrinho {
-    background-color: #000;
+    background-color: #3D2F2C;
     color: #fff;
     text-align: center;
-    padding: 30px 0;
+    padding: 36px 0;
+}
+.carrinho .header-carrinho h2{
+    font-family: 'Rowdies';
+    font-weight: 400; 
 }
 
 .carrinho .carrinho-item {
@@ -299,6 +309,7 @@ li a:hover {
     position: relative;
     border-bottom: 1px solid #666;
     padding: 20px;
+ 
 }
 
 .carrinho .carrinho-item img {
@@ -309,6 +320,8 @@ li a:hover {
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: ''Fira Sans'' ;
+   
 }
 
 .carrinho .carrinho-item .selector-quantidade {
@@ -327,7 +340,7 @@ li a:hover {
 }
 
 .carrinho-itens{
-    min-height: 195px;
+    min-height: 200px;
 }
 
 .carrinho .carrinho-item .selector-quantidade i {
@@ -343,8 +356,8 @@ li a:hover {
 
 .carrinho .carrinho-item .carrinho-item-preco {
     display: inline-block;
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 20px;
+   
 }
 
 .carrinho .carrinho-item .btn-eliminar {
@@ -353,8 +366,8 @@ li a:hover {
     top: 15px;
     color: #000;
     font-size: 20px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
@@ -363,6 +376,7 @@ li a:hover {
     display: block;
     background: transparent;
     z-index: 20;
+    
 }
 
 .carrinho .carrinho-item .btn-eliminar i {
@@ -386,7 +400,7 @@ li a:hover {
 .carrinho-total #btn-pagar {
     width: 100%;
     border: none;
-    background: #000;
+    background: #3D2F2C;
     color: #fff;
     border-radius: 5px;
     font-size: 18px;
@@ -396,6 +410,7 @@ li a:hover {
     align-items: center;
     cursor: pointer;
     transition: .3s;
+    font-family: 'Fira Sans';
 }
 
 .carrinho-total #btn-pagar:hover {
@@ -768,7 +783,7 @@ input{
     display:flex;
 
 }
-.containeranimacao{
+/* .containeranimacao{
     width: 100%;
     height: 50px;
     background: #A78983;
@@ -778,7 +793,7 @@ input{
 }
 
 .containeranimacao p{
-    font-family: 'Caprasimo';
+    font-family: '';
     font-size: 25px;
 }
 
@@ -805,4 +820,4 @@ input{
  @keyframes anima{
     from {left: 0}
     to {left: 100%}
- }
+ } */
