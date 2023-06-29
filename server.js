@@ -30,7 +30,7 @@ connection.connect(function (err) {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html')
+  res.sendFile(__dirname + '/')
 })
 
 app.get('/login', (req, res) => {
@@ -43,23 +43,19 @@ app.post('/login', (req, res) => {
   let email = req.body.email;
   let password = req.body.password;
 
-  connection.query("SELECT * FROM usuarios where email_usuario = '" + email +"'", function (err, rows) {
+
+  connection.query("SELECT * FROM user where email_user = '" + email +"'", function (err, rows) {
     if (!err){
-      console.log("Resultado:",rows );
-      
-      if (password === "Senha do banco" ){
+      if (email === rows[0].email_user && password === rows[0].password_user ){
         console.log('Senha OK');
+        res.redirect('/');
       }else{
         console.log('Senha errada');
-      }
-      if(login == "admin" && password == "admin"){
-        alert("Sucesso");
-        location.href = "../index.html";
-      }else{
         alert('Email ou senha incorreto')
       }
 
     }});
+
 })
 app.listen(3000, () => {
   console.log('Server online')
