@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tela de Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <form action='/login' method="post" role="form">
+            <div class="head">
+                <img src="../img/brownow.png">
+            </div>
+            <div>
+                <input type="email" placeholder="Insira seu e-mail" id="email" name="email" font='montserrat' required>
+            </div>
+            <div>
+                <input type="password" placeholder="Insira sua senha" id="password" name="password" required>
+            </div>
+            <button type="submit" class="submit" style="cursor: pointer;">
+                <span>Entrar</span>
+            </button>
+            <p class="cadastro">Não tem conta? <a href="cadastro.html">Cadastre-se agora</a></p>
+            <div class="voltar">
+                <a href="..">
+                    <svg width="33" height="33" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.438 18.75 4.688 12l6.75-6.75"></path>
+                        <path d="M5.625 12h13.688"></path>
+                      </svg>
+                    </svg></a>
+            </div>
+        </form>
+
+    </div>
+</body>
+<script src="../js/bw.js"></script>
+
+</html>

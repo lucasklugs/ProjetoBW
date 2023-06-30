@@ -1,10 +1,11 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 1; 
+showSlides(slideIndex); //declaração de variavel 
 
 function plusSlides(n) {
-  showSlides((slideIndex += n));
+  showSlides((slideIndex += n)); // declaração função de passar slide
 }
 
+// Funcionalidade dos slides
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -19,10 +20,10 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
-setInterval(nextSlide, 7000);
+setInterval(nextSlide, 7000); //segundos que duram cada slide
 
 function nextSlide() {
-  plusSlides(1);
+  plusSlides(1);// Passar slide
 }
 
 //Variável que mantém o carrinho visível.
