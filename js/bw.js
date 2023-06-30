@@ -25,14 +25,17 @@ function nextSlide() {
   plusSlides(1);
 }
 
+//Variável que mantém o carrinho visível.
 var carrinhoVisible = false;
 
+//Esperamos que todos os elementos da página carreguem para executar o script.
 if (document.readyState == "loading") {
   document.addEventListener("DOMContentLoaded", ready);
 } else {
   ready();
 }
 
+//Funcionalidade ao botão remover do carrinho.
 function ready() {
   var botonesEliminarItem = document.getElementsByClassName("btn-eliminar");
   for (var i = 0; i < botonesEliminarItem.length; i++) {
@@ -40,29 +43,35 @@ function ready() {
     button.addEventListener("click", eliminarItemCarrinho);
   }
 
-  var botaoSomarQuantidade =
-    document.getElementsByClassName("somar-quantidade");
-  for (var i = 0; i < botaoSomarQuantidade.length; i++) {
-    var button = botaoSomarQuantidade[i];
-    button.addEventListener("click", somarQuantidade);
-  }
+//Funcionalidade ao botão adicionar quantidade.
+var botaoSomarQuantidade =
+  document.getElementsByClassName("somar-quantidade");
+for (var i = 0; i < botaoSomarQuantidade.length; i++) {
+  var button = botaoSomarQuantidade[i];
+  button.addEventListener("click", somarQuantidade);
+}
 
-  var botaoRestarQuantidade =
-    document.getElementsByClassName("restar-quantidade");
-  for (var i = 0; i < botaoRestarQuantidade.length; i++) {
-    var button = botaoRestarQuantidade[i];
-    button.addEventListener("click", restarQuantidade);
-  }
+//Funcionalidade ao botão diminuir quantidade.
+var botaoRestarQuantidade =
+  document.getElementsByClassName("restar-quantidade");
+for (var i = 0; i < botaoRestarQuantidade.length; i++) {
+  var button = botaoRestarQuantidade[i];
+  button.addEventListener("click", restarQuantidade);
+}
 
-  var botonesAdicionarAoCarrinho =
-    document.getElementsByClassName("botao-item");
-  for (var i = 0; i < botonesAdicionarAoCarrinho.length; i++) {
-    var button = botonesAdicionarAoCarrinho[i];
-    button.addEventListener("click", adicionarAoCarrinhoClicked);
-  }
+//Funcionalidade do botão adicionar ao carrinho.
+var botonesAdicionarAoCarrinho =
+  document.getElementsByClassName("botao-item");
+for (var i = 0; i < botonesAdicionarAoCarrinho.length; i++) {
+  var button = botonesAdicionarAoCarrinho[i];
+  button.addEventListener("click", adicionarAoCarrinhoClicked);
+}
 
+//Funcionalidade ao botão comprar.
   document.getElementsByClassName('btn-confirmar')[0].addEventListener('click',confirmarClicked);
 }
+
+//Após clicar em pagar, é removido todos os itens do carrinho e o carrinho é ocultado.
 function confirmarClicked(){
   alert("Obrigado pela compra!");
   var carrinhoItens = document.getElementsByClassName('carrinho-itens')[0];
@@ -73,6 +82,7 @@ function confirmarClicked(){
   ocultarCarrinho();
 }
 
+//Função que controla o botão para adicionar ao carrinho.
 function adicionarAoCarrinhoClicked(event) {
   var button = event.target;
   var item = button.parentElement;
@@ -86,6 +96,7 @@ function adicionarAoCarrinhoClicked(event) {
   hacerVisibleCarrinho();
 }
 
+//Função que torna o carrinho visível.
 function hacerVisibleCarrinho() {
   carrinhoVisible = true;
   var carrinho = document.getElementsByClassName("carrinho")[0];
@@ -96,20 +107,22 @@ function hacerVisibleCarrinho() {
   itens.style.width = "60%";
 }
 
+//Função que adiciona um item ao carrinho.
 function adicionarItemAoCarrinho(titulo, preco, imagemSrc) {
   var item = document.createElement("div");
   item.classList.add = "item";
   var itensCarrinho = document.getElementsByClassName("carrinho-itens")[0];
 
-  var nomesItensCarrinho = itensCarrinho.getElementsByClassName(
-    "carrinho-item-titulo"
-  );
-  for (var i = 0; i < nomesItensCarrinho.length; i++) {
-    if (nomesItensCarrinho[i].innerText == titulo) {
-      alert("O item já está no carrinho");
-      return;
-    }
+//É verificado se o item que está tentando inserir não está no carrinho.
+var nomesItensCarrinho = itensCarrinho.getElementsByClassName(
+  "carrinho-item-titulo"
+);
+for (var i = 0; i < nomesItensCarrinho.length; i++) {
+  if (nomesItensCarrinho[i].innerText == titulo) {
+    alert("O item já está no carrinho");
+    return;
   }
+}
 
   var itemCarrinhoConteudo = `
         <div class="carrinho-item">
@@ -128,22 +141,26 @@ function adicionarItemAoCarrinho(titulo, preco, imagemSrc) {
             </button>
         </div>
     `;
+
   item.innerHTML = itemCarrinhoConteudo;
   itensCarrinho.append(item);
 
-  item
-    .getElementsByClassName("btn-eliminar")[0]
-    .addEventListener("click", eliminarItemCarrinho);
+//Funcionalidade de excluir um item.
+item.getElementsByClassName("btn-eliminar")[0].addEventListener("click", eliminarItemCarrinho);
 
-  var botaoRestarQuantidade =
-    item.getElementsByClassName("restar-quantidade")[0];
+//Funcionalidade de diminuir quantidade do novo item.
+  var botaoRestarQuantidade = item.getElementsByClassName("restar-quantidade")[0];
   botaoRestarQuantidade.addEventListener("click", restarQuantidade);
 
+//Funcionalidade de adicionar quantidade do novo item.
   var botaoSomarQuantidade = item.getElementsByClassName("somar-quantidade")[0];
   botaoSomarQuantidade.addEventListener("click", somarQuantidade);
 
+//Atualizar o total de itens no carrinho.
   atualizarTotalCarrinho();
 }
+
+//Aumenta o número do elemento selecionado em 1.
 function somarQuantidade(event) {
   var buttonClicked = event.target;
   var selector = buttonClicked.parentElement;
@@ -158,6 +175,8 @@ function somarQuantidade(event) {
     quantidadeAtual;
   atualizarTotalCarrinho();
 }
+
+//Diminui o número do elemento selecionado em 1.
 function restarQuantidade(event) {
   var buttonClicked = event.target;
   var selector = buttonClicked.parentElement;
@@ -175,13 +194,17 @@ function restarQuantidade(event) {
   }
 }
 
+//Remove o item selecionado do carrinho.
 function eliminarItemCarrinho(event) {
   var buttonClicked = event.target;
   buttonClicked.parentElement.parentElement.remove();
   atualizarTotalCarrinho();
 
+//Verifica se tem itens no carrinho, caso não haja o carrinho é ocultado.
   ocultarCarrinho();
 }
+
+//Função que verifica se tem itens no carrinho, caso não houver o carrinho é ocultado.
 function ocultarCarrinho() {
   var carrinhoItens = document.getElementsByClassName("carrinho-itens")[0];
   if (carrinhoItens.childElementCount == 0) {
@@ -195,13 +218,17 @@ function ocultarCarrinho() {
   }
 }
 
+//Função que atualiza o total do carrinho.
 function atualizarTotalCarrinho() {
+//Seleciona o contêiner do carrinho.
   var carrinhoProdutos = document.getElementsByClassName("carrinho")[0];
   var carrinhoItens = carrinhoProdutos.getElementsByClassName("carrinho-item");
   var total = 0;
+//Verifica cada item no carrinho para atualizar o total.
   for (var i = 0; i < carrinhoItens.length; i++) {
     var item = carrinhoItens[i];
     var precoElemento = item.getElementsByClassName("carrinho-item-preco")[0];
+//Função que verifica o preço da compra.
     var preco = parseFloat(
       precoElemento.innerText.replace("R$", "")
     );
@@ -218,6 +245,7 @@ function atualizarTotalCarrinho() {
     "R$" + total.toLocaleString("pt-BR");
 }
 
+//Ao clicar em pagar, é aberto a tela de pagamento.
 document.getElementById('btn-pagar').addEventListener('click', function () {
 document.getElementById('payment-popup').style.display = 'block';
 });
@@ -225,33 +253,37 @@ document.getElementById('payment-popup').style.display = 'block';
 document.querySelector('form').addEventListener('submit', function (event) {
   event.preventDefault();
 
-  // Aqui você pode adicionar a lógica para processar o pagamento
-
-  // Fechar o popup após o pagamento ser processado
+//Fechar o popup após o pagamento ser processado.
   document.getElementById('payment-popup').style.display = 'none';
 });
 
+//Ao clicar em instituições, é aberto a tela de instituições.
 document.getElementById('btn-instituicao').addEventListener('click', function () {
   document.getElementById('instituicao-popup').style.display = 'block';
 });
 
+//Ao clicar em confirmar, é fechada a tela de instituições e aberta a tela de pagamento.
 document.getElementById('btn-confirmar2').addEventListener('click', function () {
   document.getElementById('instituicao-popup').style.display = 'none';
   document.getElementById('payment-popup').style.display = 'block';
 });
 
+//Ao clicar no botão do pix, é aberto a tela de pagamento do pix.
 document.getElementById('btn-pix').addEventListener('click', function () {
   document.getElementById('pix-popup').style.display = 'block';
 });
 
+//Ao clicar no pix, é fechado a tela e aberto a do pagamento.
 document.getElementById('pix-popup').addEventListener('click', function () {
   document.getElementById('pix-popup').style.display = 'none';
 });
 
+//Ao clicar no botão do boleto, é aberto a tela de pagamento do boleto.
 document.getElementById('btn-boleto').addEventListener('click', function () {
   document.getElementById('boleto-popup').style.display = 'block';
 });
 
+//Ao clicar no boleto, é fechado a tela e aberto a do pagamento.
 document.getElementById('boleto-popup').addEventListener('click', function () {
   document.getElementById('boleto-popup').style.display = 'none';
 });
