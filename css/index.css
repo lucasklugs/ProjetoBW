@@ -196,6 +196,7 @@ li a:hover {
    overflow-x: hidden;
    cursor:default;
 }
+
 .produtos {
     overflow-x: hidden;
     max-width: 1200px;
@@ -262,24 +263,12 @@ li a:hover {
 
 }
 
-/* .produtos .produtos-itens .item .botao-item {
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
- .produtos .produtos-itens .item .botao-item:hover class .produtos-itens {
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  } */
-
-
-
 .carrinho {
     width: 35%;
+    margin-top: 30px;
     overflow: hidden;
-    position:-webkit-sticky; 
-    position: fixed;
+    margin-bottom: auto;
+    position: sticky !important;
     transition: .3s;
     margin-right: -100%;
     opacity: 0;
@@ -306,7 +295,6 @@ li a:hover {
     position: relative;
     border-bottom: 1px solid #666;
     padding: 20px;
- 
 }
 
 .carrinho .carrinho-item img {

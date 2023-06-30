@@ -179,85 +179,77 @@ li a:hover {
     cursor:default;
  }
  .produtos {
-     overflow-x: hidden;
-     max-width: 1200px;
-     width: 100%;
-     margin: auto;
-     display: flex;
-     align-items: center;
-    
- }
-
- .produtos .produtos-itens {
-     margin-top: 60px;
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-     grid-gap:90px;
-     grid-row-gap: 70px;
-     width: 100%;
-     transition: .3s;
-      line-height: 60px ;
- }
- 
- .produtos .produtos-itens .item {
-     max-width: 200px;
-     margin: auto;
-     background-color: #fff;
-     border-radius: 10px;
-     padding: 20px;
-     transition: .3s;
- }
- 
- .produtos .produtos-itens .item .img-item {
-     width: 100%;
- }
- 
- .produtos .produtos-itens .item .titulo-item {
-     display: block;
-     height: 60px;
-     text-align: center;
-     color: black;
-     font-family: 'Fira Sans';
- }
- 
- .produtos .produtos-itens .item .preco-item {
-     display: block;
-     text-align: center;
-     font-size: 23px;
-     color: black;
-     font-family: 'Fira Sans';
-     font-weight: 400;
- 
- }
- 
- .produtos .produtos-itens .item .botao-item {
-     display: block;
-     margin: 5px auto;
-     border: none;
-     background-color: #3D2F2B;
-     color: #fff;
-     padding: 5px 17px;
-     border-radius: 5px;
-     cursor: pointer;
-   
- }
-
-.footer {
+    overflow-x: hidden;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    background-color: #3D2F2B;
-    padding: 3rem;
-    height: 80px;
-    margin-top: 10%;
-    flex-direction: column;
+    align-items: center;
+   
 }
 
 
+.produtos .produtos-itens {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap:90px;
+    grid-row-gap: 70px;
+    width: 100%;
+    transition: .3s;
+     line-height: 60px ;
+}
+
+.produtos .produtos-itens .item {
+    max-width: 200px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+
+.produtos .produtos-itens .item .img-item {
+    width: 100%;
+}
+
+.produtos .produtos-itens .item .titulo-item {
+    display: block;
+    height: 60px;
+    text-align: center;
+    color: black;
+    font-family: 'Fira Sans';
+}
+
+.produtos .produtos-itens .item .preco-item {
+    display: block;
+    text-align: center;
+    font-size: 23px;
+    color: black;
+    font-family: 'Fira Sans';
+    font-weight: 400;
+
+}
+
+.produtos .produtos-itens .item .botao-item {
+    display: block;
+    margin: 5px auto;
+    border: none;
+    background-color: #3D2F2B;
+    color: #fff;
+    padding: 5px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+  
+
+}
+
 .carrinho {
     width: 35%;
+    margin-top: 30px;
     overflow: hidden;
-    position:-webkit-sticky; 
-    position: fixed;
+    margin-bottom: auto;
+    position: sticky !important;
     transition: .3s;
     margin-right: -100%;
     opacity: 0;
@@ -284,7 +276,6 @@ li a:hover {
     position: relative;
     border-bottom: 1px solid #666;
     padding: 20px;
- 
 }
 
 .carrinho .carrinho-item img {
@@ -332,6 +323,7 @@ li a:hover {
 .carrinho .carrinho-item .carrinho-item-preco {
     display: inline-block;
     font-size: 20px;
+   
 }
 
 .carrinho .carrinho-item .btn-eliminar {
@@ -349,7 +341,8 @@ li a:hover {
     cursor: pointer;
     display: block;
     background: transparent;
-    z-index: 20; 
+    z-index: 20;
+    
 }
 
 .carrinho .carrinho-item .btn-eliminar i {
@@ -403,7 +396,6 @@ li a:hover {
         width: 100%;
     }
 }
-
 
 #payment-popup {
     display: none;
