@@ -237,13 +237,13 @@
                     <button name="apple-pay" type="button" style="cursor: pointer;">
                         <img src="img/apple-pay.png" height="60" width="110px">
                     </button>
-                    <button name="pix" type="button" style="cursor: pointer;">
+                    <button id="btn-pix" type="button" style="cursor: pointer;">
                         <img src="img/pix.png" height="35" width="35">
                     </button>
                     <button name="google-pay" type="button" style="cursor: pointer;">
                         <img src="img/google-pay.png" height="40" width="70">
                     </button>
-                    <button name="google-pay" type="button" style="cursor: pointer;">
+                    <button id="btn-boleto" type="button" style="cursor: pointer;">
                         <img src="img/boleto.png" height="50" width="80">
                     </button>
                 </div>
@@ -265,7 +265,7 @@
                         <label class="input_label">Data de expiração/CVV</label>
                         <div class="split">
                             <input class="input_field" style="width: 250px;" type="text" placeholder="01/23">
-                            <input class="input_field" style="width: 110px;" type="number" placeholder="CVV">
+                            <input class="input_field" style="width: 90px;" type="number" placeholder="CVV">
                         </div>
                     </div>
                 </div>
@@ -303,7 +303,16 @@
             </section>
         </div>
     </div>
-
+    <div id="pix-popup">
+        <div class="qrcode_pix">
+            <img src="../ProjetoBW/img/qrcode-pix.png" height="600px" width="700px">
+        </div>
+    </div>
+    <div id="boleto-popup">
+        <div class="boleto_pagar">
+            <img src="../ProjetoBW/img/boleto-pagar.png" height="600px" width="700px">
+        </div>
+    </div>
     <footer class="footer">
         <!-- <div class="containercake">
             <img id="animacaobw" alt="animacaobw" src="../ProjetoBW/img/animacaobw.png">

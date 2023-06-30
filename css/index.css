@@ -664,6 +664,22 @@ input{
     scale: 1.05;
 }
 
+#pix-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#boleto-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @-webkit-keyframes animacaobw {
     from {
         -webkit-transform: rotate(4deg)

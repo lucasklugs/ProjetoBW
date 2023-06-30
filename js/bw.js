@@ -241,6 +241,22 @@ document.getElementById('btn-confirmar2').addEventListener('click', function () 
   document.getElementById('payment-popup').style.display = 'block';
 });
 
+document.getElementById('btn-pix').addEventListener('click', function () {
+  document.getElementById('pix-popup').style.display = 'block';
+});
+
+document.getElementById('pix-popup').addEventListener('click', function () {
+  document.getElementById('pix-popup').style.display = 'none';
+});
+
+document.getElementById('btn-boleto').addEventListener('click', function () {
+  document.getElementById('boleto-popup').style.display = 'block';
+});
+
+document.getElementById('boleto-popup').addEventListener('click', function () {
+  document.getElementById('boleto-popup').style.display = 'none';
+});
+
 var dateControl = document.querySelector('input[type="date"]');
 dateControl.value = '01-06-2017';
 
