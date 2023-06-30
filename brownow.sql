@@ -20,6 +20,9 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `brownow`
 --
+DROP DATABASE IF EXISTS brownow;
+CREATE DATABASE brownow;
+USE brownow;
 
 -- --------------------------------------------------------
 
