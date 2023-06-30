@@ -1,3 +1,6 @@
+
+
+run().catch(console.dir);
 const express = require('express')
 const bodyParser = require('body-parser')
 const mysql = require('mysql2');
@@ -29,53 +32,82 @@ connection.connect(function (err) {
   }
 });
 
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://lucasklugs:<password>@brownow.dgydvhu.mongodb.net/?retryWrites=true&w=majority";
+// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+const client = new MongoClient(uri, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+});
+async function run() {
+  try {
+    // Connect the client to the server	(optional starting in v4.7)
+    await client.connect();
+    // Send a ping to confirm a successful connection
+    await client.db("admin").command({ ping: 1 });
+    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
+  }
+}
+
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/')
 })
 
-app.get('/login', (req, res) => {
-  res.sendFile(__dirname + '/html/login.html')
-})
-app.get('/cadastro', (req, res) => {
-  res.sendFile(__dirname + '/html/cadastro.html')
-})
+
+app.post('/login', (req, res) => {
+  let username = req.body.username;
+  let password = req.body.password;
+  
+  connection.query("SELECT * FROM user where email = '" + username + "'" , function (err, rows, fields) {
+    console.log("Results:", rows);
+    
+    if (!err) {
+
+      if (rows.length > 0) {
+        if (email === rows[0].email_user && password === rows[0].password_user ){
+          console.log('Password OK');
+          res.redirect('/');
+        }else{
+          console.log('Password Incorrect');
+          alert('Email or password incorrect')
+        }
+        
+      } else {
+        res.send('Login Failed - Email not registred');
+      }
+    } else {
+      console.log("Error: Consult not realized", err);
+      res.send('Login failed');
+    }
+  });
+});
+
 app.post('/cadastro', (req, res) => {
   let name = req.body.name;
   let email = req.body.email;
   let password = req.body.password;
   
-app.post('/login', (req, res) => {
-  let email = req.body.email;
-  let password = req.body.password;
-
-
-
-  connection.query("INSERT INTO user(user_name, user_email, user_password) VALUES  ('" + name + "', '" + email + "','" + password + "')", function (err, rows, fields) {
-      console.log("Results:", rows);
-      if (!err) {
-          console.log("Cadastro feito com sucesso!!");
-          res.sendFile(__dirname + '/html/cadastro.html')
-      } else {
-          console.log("Erro: Consulta não realizada", err);
-          res.send('Login failed');
-      }
+  connection.query("INSERT INTO user (user_name, user_email, user_password) VALUES  ('" + name + "', '" + email + "','" + password + "')", function (err, rows, fields) {
+    console.log("Results:", rows);
+    if (!err) {
+      console.log("Successfully sing up");
+      res.sendFile(__dirname + '/html/login.html')
+    } else {
+      console.log("Consult not realized", err);
+      res.send('Login failed');
+    }
   });
 });
 
 
-  connection.query("SELECT * FROM user where email_user = '" + email +"'", function (err, rows) {
-    if (!err){
-      if (email === rows[0].email_user && password === rows[0].password_user ){
-        console.log('Senha OK');
-        res.redirect('/');
-      }else{
-        console.log('Senha errada');
-        alert('Email ou senha incorreto')
-      }
-
-    }});
-
-})
 app.listen(3000, () => {
-  console.log('Server online')
+  console.log('Server on the port 3000')
 })
+
