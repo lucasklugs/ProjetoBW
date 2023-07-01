@@ -6,5 +6,5 @@ const register = new Schema({
     password: {type: String}
 })
 
-const register_model = new model("register", register)
+const register_model = new model("table_register", register)
 module.exports = register_model

@@ -1,9 +1,9 @@
 const express = require("express");
-const body_parser = require("express")
+const body_parser = require("body-parser")
 const app = express();
-const port = "3000"
+const port = 3000
 const mongoose = require('mongoose')
-mongoose.connect("mongodb+srv://lucasklugs:lucasmongo2102@brownow.dgydvhu.mongodb.net");
+mongoose.connect("mongodb+srv://lucasklugs:FiB2JFnxYK6cUWoh@brownow.dgydvhu.mongodb.net/");
 const db = mongoose.connection
 db.once("open", ()=>{
     console.log("Database Connected");
@@ -19,24 +19,30 @@ app.use(express.static(path.join(__dirname, "/public")))
 app.use(body_parser.json())
 app.use(body_parser.urlencoded({extended: true}))
 
- app.get('/teste', (req, res)=> {
-    // console.log(req.body); 
- })
+//  app.get('/teste', (req, res)=> {
+//      console.log(req.body); 
+//  })
 
  app.post('/login', async(req, res) => {
     console.log(req.body)
     const result = await login_model.findOne({
-        email:req.body.logemail 
+     email:req.body.email
     })
-    console.log("result")
-    if (req.body.logpass === result.password){
-        res.send("You're logged on!!")
-
-    }
+    console.log(result.password, req.body.password)
+     if (req.body.password === result.password){
+         console.log("logged in")
+         res.redirect('/');
+     }  
+     else {
+        console.log("Not connected")
+        res.send("Not connected")
+     }
  }) 
 
 
-
+ app.listen(3000, () => {
+   console.log('Server on the port 3000')
+ })
 
 
 
@@ -114,7 +120,7 @@ app.use(body_parser.urlencoded({extended: true}))
 //        if (rows.length > 0) {
 //          if (email === rows[0].email_user && password === rows[0].password_user ){
 //            console.log('Password OK');
-//            res.redirect('/');
+//            
 //          }else{
 //            console.log('Password Incorrect');
 //            alert('Email or password incorrect')
@@ -148,8 +154,6 @@ app.use(body_parser.urlencoded({extended: true}))
 //  });
  
  
-//  app.listen(3000, () => {
-//    console.log('Server on the port 3000')
-//  })
+
  
  

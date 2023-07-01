@@ -6,5 +6,5 @@ const login = new Schema({
     
 })
 
-const login_model = new model("login", login)
+const login_model = new model("logins", login)
 module.exports = login_model
