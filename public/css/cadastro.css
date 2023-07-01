@@ -128,3 +128,10 @@ p a{
   overflow: hidden;
   scale: 1.1;
 }
+.check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 10px;
+}
