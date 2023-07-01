@@ -274,8 +274,8 @@ document.getElementById('btn-pix').addEventListener('click', function () {
   document.getElementById('pix-popup').style.display = 'block';
 });
 
-//Ao clicar no pix, é fechado a tela e aberto a do pagamento.
-document.getElementById('pix-popup').addEventListener('click', function () {
+//Ao clicar no botão continuar, é fechado a tela e aberto a do pagamento.
+document.getElementById('btn-continuar').addEventListener('click', function () {
   document.getElementById('pix-popup').style.display = 'none';
 });
 
@@ -284,8 +284,8 @@ document.getElementById('btn-boleto').addEventListener('click', function () {
   document.getElementById('boleto-popup').style.display = 'block';
 });
 
-//Ao clicar no boleto, é fechado a tela e aberto a do pagamento.
-document.getElementById('boleto-popup').addEventListener('click', function () {
+//Ao clicar no botão de continuar, é fechado a tela e aberto a do pagamento.
+document.getElementById('btn-continuar2').addEventListener('click', function () {
   document.getElementById('boleto-popup').style.display = 'none';
 });
 

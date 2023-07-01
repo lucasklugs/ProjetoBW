@@ -665,6 +665,45 @@ input {
     transform: translate(-50%, -50%);
 }
 
+#btn-continuar {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#btn-continuar:hover {
+    scale: 1.05;
+}
+
+#btn-continuar2 {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#btn-continuar2:hover {
+    scale: 1.05;
+}
 @-webkit-keyframes animacaobw {
     from {
         -webkit-transform: rotate(4deg)
