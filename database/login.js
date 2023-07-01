@@ -1,6 +1,7 @@
 const{ default: mongoose, Schema, model} = require("mongoose");
 
 const login = new Schema({
+    username: {type: String},
     email: {type: String},
     password: {type: String}
     

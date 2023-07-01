@@ -10,18 +10,31 @@ db.once("open", ()=>{
 })
 
 const login_model = require("./database/login")
-const register_model = require("./database/register")
 
 const exp = require('constants')
-const path =  require('path')
+const path =  require('path');
+const session = require("express-session");
 
 app.use(express.static(path.join(__dirname, "/public")))
 app.use(body_parser.json())
 app.use(body_parser.urlencoded({extended: true}))
+app.set('trust proxy', 1)
+app.use(session({
+    secret: 'lucasmongo69',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: false }
+}))
 
-//  app.get('/teste', (req, res)=> {
-//      console.log(req.body); 
-//  })
+ app.all('*', (req, res, next) => {
+    console.log(req.session.type)
+     if(req.session.type === undefined ){
+        req.session.type = "guest" 
+     } else {
+        console.log("user is logged")
+     }
+     next()
+ })
 
  app.post('/login', async(req, res) => {
     console.log(req.body)
@@ -30,15 +43,24 @@ app.use(body_parser.urlencoded({extended: true}))
     })
     console.log(result.password, req.body.password)
      if (req.body.password === result.password){
+        req.session.type = "user" 
          console.log("logged in")
          res.redirect('/');
      }  
      else {
         console.log("Not connected")
         res.send("Not connected")
+        
      }
  }) 
 
+ app.post('/cadastro', async(req, res) => {
+    console.log(req.body)
+    const result = await login_model.create(
+        req.body
+    )
+    res.redirect('/login.html');
+ })
 
  app.listen(3000, () => {
    console.log('Server on the port 3000')
