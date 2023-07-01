@@ -13,7 +13,7 @@ body {
 * {
     font-family: 'Fira Sans';
     margin: 0;
-    border: 0;
+    /* border: 0; */
     padding: 0;
 }
 
@@ -153,6 +153,27 @@ li a:hover {
     border-bottom: 2px solid #bcb09e;
     color: #d3c5b0;
 
+} 
+
+.caixatexto{
+   
+    background-color: none;
+    margin-top: 5%;
+    text-align: -webkit-match-parent;
+    display: inline-table;
+    margin-left: 50px;
+    line-height: 3vh;
+    
+}
+ 
+.title{
+    font-family: 'Fira Sans';
+    color: #3D2F2C;
+}
+
+p .text-body{
+    font-family: 'Fira Sans';
+
 }
 
 
@@ -165,21 +186,13 @@ li a:hover {
     margin-top: 10%;
     flex-direction: column;
 }
-/* /* .containercake img{
-    width: 20%;
-    height: 30%;
-    position:relative;
-	/* left:0%; */
 
 
 .container_footer{
     display: flex;
     justify-content: space-around;
     height: 100%;
-    width: 1140px;
     background-color: #3D2F2B;
-    margin-left: 10%;
-    margin-top: 20px;
 }
 
 .container_footer a{
