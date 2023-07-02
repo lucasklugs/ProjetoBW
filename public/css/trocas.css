@@ -1,5 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Fira+Sans:wght@300;400;500&display=swap');
 
 
+body {
+    background-color: #E8E5E0;
+    width: 100%;
+    height: 100vh;
+}
+
+* {
+    font-family: 'Fira Sans';
+    margin: 0;
+    /* border: 0; */
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #3D2F2C;
+    display: flex;
+}
+
+.cabeca {
+    width: 100%;
+    height: 100px;
+}
+
+.cabeca a {
+    text-decoration: 1px;
+    color: #3D2F2C;
+    font-weight: 700;
+    text-underline-offset: 0.2rem;
+    font-family: 'Geologica';
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.logo {
+    width: 160px;
+    height: 100px;
+}
+
+.logo img {
+    width: 160px;
+    height: 100px;
+}
+
+.buscar {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 40px;
+    margin-right: auto;
+    padding: 0;
+}
+
+.buscar input {
+    font-family: 'Fira Sans';
+    font-size: 13px;
+    height: 2rem;
+    width: 12rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0 60px 0 20px;
+
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.buscar.active input {
+    border-radius: 5px 5px 0 0;
+}
+
+.icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 210px;
+    height: 90px;
+}
+
+.icons .imgconta {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.icons .imgconta img {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.icons .imgconta img:hover {
+    overflow: hidden;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 2.2rem;
+    width: 100%;
+    font-style: #0000;
+    color: #3D2F2C;
+    font-size: 15px;
+}
+
+
+.fundo2 {
+    margin-top: -10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+li {
+    font-size: 16px;
+    width: 130px;
+    list-style-type: none;
+}
+
+.lista {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 100%;
+}
+
+li a:hover {
+    border-bottom: 2px solid #bcb09e;
+    color: #d3c5b0;
+
+} 
+
+.caixatexto{
+   
+    background-color: none;
+    margin-top: 5%;
+    text-align: -webkit-match-parent;
+    display: inline-table;
+    margin-left: 50px;
+    line-height: 3vh;
+    
+}
+ 
+.title{
+    font-family: 'Fira Sans';
+    color: #3D2F2C;
+}
+
+p .text-body{
+    font-family: 'Fira Sans';
+
+}
 
 
 .footer {
@@ -11,11 +186,6 @@
     margin-top: 10%;
     flex-direction: column;
 }
-/* /* .containercake img{
-    width: 20%;
-    height: 30%;
-    position:relative;
-	/* left:0%; */
 
 
 .container_footer{
@@ -95,41 +265,3 @@
     display:flex;
 
 }
-/* .containeranimacao{
-    width: 100%;
-    height: 50px;
-    background: #A78983;
-    margin-top: 10px;
-    font-family: 'Bebas Neue';
-    
-}
-
-.containeranimacao p{
-    font-family: '';
-    font-size: 25px;
-}
-
-#animacao2{
-    position: absolute;
-    margin:13px;
-    right: 0;
-    width: max-content;
-    height: 24px;
-    animation: anima 10s linear infinite;
-    overflow: hidden;
- 
- }
- 
- #animacao2::after{
-    content:"";
-    position:absolute;
-    left:100vw;
-    background: #A78983;
-    width: 40px;
-    height: 24px;
- }
- 
- @keyframes anima{
-    from {left: 0}
-    to {left: 100%}
- } */
