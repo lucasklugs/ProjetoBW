@@ -1,20 +1,23 @@
+// Importa as dependências necessárias
 const express = require("express");
 const body_parser = require("body-parser")
 const app = express();
 const port = 3000
 const mongoose = require('mongoose')
+// Configura a conexão com o banco
 mongoose.connect("mongodb+srv://lucasklugs:FiB2JFnxYK6cUWoh@brownow.dgydvhu.mongodb.net/");
 const db = mongoose.connection
 db.once("open", ()=>{
     console.log("Database Connected");
 })
-
+// Importa as dependências necessárias
 const login_model = require("./database/login")
 
 const exp = require('constants')
 const path =  require('path');
 const session = require("express-session");
 
+//A configuração do Express
 app.use(express.static(path.join(__dirname, "/public")))
 app.use(body_parser.json())
 app.use(body_parser.urlencoded({extended: true}))
@@ -26,6 +29,7 @@ app.use(session({
   cookie: { secure: false }
 }))
 
+// Definição para verificar o tipo de usuário sendo primeiramente um "guest" e após o login um "user"
  app.all('*', (req, res, next) => {
     console.log(req.session.type)
      if(req.session.type === undefined ){
@@ -36,6 +40,7 @@ app.use(session({
      next()
  })
 
+// Autenticação de login
  app.post('/login', async(req, res) => {
     console.log(req.body)
     const result = await login_model.findOne({
@@ -54,6 +59,7 @@ app.use(session({
      }
  }) 
 
+// Cadastro de novo usuário
  app.post('/cadastro', async(req, res) => {
     console.log(req.body)
     const result = await login_model.create(
@@ -62,12 +68,14 @@ app.use(session({
     res.redirect('/login.html');
  })
 
+// Iniciar servidor
  app.listen(3000, () => {
    console.log('Server on the port 3000')
  })
 
 
 
+// Abaixo são apenas testes anteriores:
 
 //  run().catch(console.dir);
 //  const express = require('express')
