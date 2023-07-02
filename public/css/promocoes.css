@@ -155,7 +155,20 @@ li a:hover {
     color: #d3c5b0;
 
 }
-
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3D2F2C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    margin-top: 3%;
+    margin-left: 3px;
+}
+.btn:hover {
+    background-color: #A78983;
+}
 .carrimg {
     display: flex;
     justify-content: center;
