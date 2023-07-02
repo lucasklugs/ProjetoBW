@@ -738,7 +738,30 @@ input {
 #btn-continuar2:hover {
     scale: 1.05;
 }
+@-webkit-keyframes animacaobw {
+    from {
+        -webkit-transform: rotate(4deg)
+    }
 
+    to {
+        -webkit-transform: rotate(-4deg)
+    }
+}
+
+@keyframes animacaobw {
+    from {
+        transform: rotate(4deg)
+    }
+
+    to {
+        transform: rotate(-4deg)
+    }
+}
+
+#animacaobw {
+    -webkit-animation: animacaobw 2s alternate infinite ease-in-out;
+    animation: animacaobw 2s alternate infinite ease-in-out;
+}
 
 
 .footer {
