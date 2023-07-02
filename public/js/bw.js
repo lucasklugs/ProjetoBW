@@ -274,8 +274,8 @@ document.getElementById('btn-pix').addEventListener('click', function () {
   document.getElementById('pix-popup').style.display = 'block';
 });
 
-//Ao clicar no pix, é fechado a tela e aberto a do pagamento.
-document.getElementById('pix-popup').addEventListener('click', function () {
+//Ao clicar no botão continuar, é fechado a tela e aberto a do pagamento.
+document.getElementById('btn-continuar').addEventListener('click', function () {
   document.getElementById('pix-popup').style.display = 'none';
 });
 
@@ -284,11 +284,153 @@ document.getElementById('btn-boleto').addEventListener('click', function () {
   document.getElementById('boleto-popup').style.display = 'block';
 });
 
-//Ao clicar no boleto, é fechado a tela e aberto a do pagamento.
-document.getElementById('boleto-popup').addEventListener('click', function () {
+//Ao clicar no botão de continuar, é fechado a tela e aberto a do pagamento.
+document.getElementById('btn-continuar2').addEventListener('click', function () {
   document.getElementById('boleto-popup').style.display = 'none';
 });
 
+document.getElementById('btn-descricao').addEventListener('click', function () {
+  document.getElementById('descricao-popup').style.display = 'block';
+});
+
+document.getElementById('btn-fechar').addEventListener('click', function () {
+  document.getElementById('descricao-popup').style.display = 'none';
+});
+
+document.getElementById('btn-descricao2').addEventListener('click', function () {
+  document.getElementById('descricao-popup2').style.display = 'block';
+});
+
+document.getElementById('btn-fechar2').addEventListener('click', function () {
+  document.getElementById('descricao-popup2').style.display = 'none';
+});
+
+document.getElementById('btn-descricao3').addEventListener('click', function () {
+  document.getElementById('descricao-popup3').style.display = 'block';
+});
+
+document.getElementById('btn-fechar3').addEventListener('click', function () {
+  document.getElementById('descricao-popup3').style.display = 'none';
+});
+document.getElementById('btn-descricao4').addEventListener('click', function () {
+  document.getElementById('descricao-popup4').style.display = 'block';
+});
+
+document.getElementById('btn-fechar4').addEventListener('click', function () {
+  document.getElementById('descricao-popup4').style.display = 'none';
+});
+document.getElementById('btn-descricao5').addEventListener('click', function () {
+  document.getElementById('descricao-popup5').style.display = 'block';
+});
+
+document.getElementById('btn-fechar5').addEventListener('click', function () {
+  document.getElementById('descricao-popup5').style.display = 'none';
+});
+document.getElementById('btn-descricao6').addEventListener('click', function () {
+  document.getElementById('descricao-popup6').style.display = 'block';
+});
+
+document.getElementById('btn-fechar6').addEventListener('click', function () {
+  document.getElementById('descricao-popup6').style.display = 'none';
+});
+document.getElementById('btn-descricao7').addEventListener('click', function () {
+  document.getElementById('descricao-popup7').style.display = 'block';
+});
+
+document.getElementById('btn-fechar7').addEventListener('click', function () {
+  document.getElementById('descricao-popup7').style.display = 'none';
+});
+document.getElementById('btn-descricao8').addEventListener('click', function () {
+  document.getElementById('descricao-popup8').style.display = 'block';
+});
+
+document.getElementById('btn-fechar8').addEventListener('click', function () {
+  document.getElementById('descricao-popup8').style.display = 'none';
+});
+document.getElementById('btn-descricao9').addEventListener('click', function () {
+  document.getElementById('descricao-popup9').style.display = 'block';
+});
+
+document.getElementById('btn-fechar9').addEventListener('click', function () {
+  document.getElementById('descricao-popup9').style.display = 'none';
+});
+document.getElementById('btn-descricao10').addEventListener('click', function () {
+  document.getElementById('descricao-popup10').style.display = 'block';
+});
+
+document.getElementById('btn-fechar10').addEventListener('click', function () {
+  document.getElementById('descricao-popup10').style.display = 'none';
+});
+document.getElementById('btn-descricao11').addEventListener('click', function () {
+  document.getElementById('descricao-popup11').style.display = 'block';
+});
+
+document.getElementById('btn-fechar11').addEventListener('click', function () {
+  document.getElementById('descricao-popup11').style.display = 'none';
+});
+document.getElementById('btn-descricao12').addEventListener('click', function () {
+  document.getElementById('descricao-popup12').style.display = 'block';
+});
+
+document.getElementById('btn-fechar12').addEventListener('click', function () {
+  document.getElementById('descricao-popup12').style.display = 'none';
+});
+document.getElementById('btn-descricao13').addEventListener('click', function () {
+  document.getElementById('descricao-popup13').style.display = 'block';
+});
+
+document.getElementById('btn-fechar13').addEventListener('click', function () {
+  document.getElementById('descricao-popup13').style.display = 'none';
+});
+document.getElementById('btn-descricao14').addEventListener('click', function () {
+  document.getElementById('descricao-popup14').style.display = 'block';
+});
+
+document.getElementById('btn-fechar14').addEventListener('click', function () {
+  document.getElementById('descricao-popup14').style.display = 'none';
+});
+document.getElementById('btn-descricao15').addEventListener('click', function () {
+  document.getElementById('descricao-popup15').style.display = 'block';
+});
+
+document.getElementById('btn-fechar15').addEventListener('click', function () {
+  document.getElementById('descricao-popup15').style.display = 'none';
+});
+document.getElementById('btn-descricao16').addEventListener('click', function () {
+  document.getElementById('descricao-popup16').style.display = 'block';
+});
+
+document.getElementById('btn-fechar16').addEventListener('click', function () {
+  document.getElementById('descricao-popup16').style.display = 'none';
+});
+document.getElementById('btn-descricao17').addEventListener('click', function () {
+  document.getElementById('descricao-popup17').style.display = 'block';
+});
+
+document.getElementById('btn-fechar17').addEventListener('click', function () {
+  document.getElementById('descricao-popup17').style.display = 'none';
+});
+document.getElementById('btn-descricao18').addEventListener('click', function () {
+  document.getElementById('descricao-popup18').style.display = 'block';
+});
+
+document.getElementById('btn-fechar18').addEventListener('click', function () {
+  document.getElementById('descricao-popup18').style.display = 'none';
+});
+document.getElementById('btn-descricao19').addEventListener('click', function () {
+  document.getElementById('descricao-popup19').style.display = 'block';
+});
+
+document.getElementById('btn-fechar19').addEventListener('click', function () {
+  document.getElementById('descricao-popup19').style.display = 'none';
+});
+document.getElementById('btn-descricao20').addEventListener('click', function () {
+  document.getElementById('descricao-popup20').style.display = 'block';
+});
+
+document.getElementById('btn-fechar20').addEventListener('click', function () {
+  document.getElementById('descricao-popup20').style.display = 'none';
+});
 var dateControl = document.querySelector('input[type="date"]');
 dateControl.value = '01-06-2017';
 
