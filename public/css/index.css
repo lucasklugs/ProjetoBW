@@ -234,11 +234,8 @@ li a:hover {
 }
 
 .produtos .produtos-itens .item .img-item2 {
-    display: flex;
-    align-items: center;
-    width: 100px;
-    height: 50px;
-    margin-left: 60px;
+    width: 20px;
+    height: 20px;
 }
 #btn-descricao, #btn-descricao2, #btn-descricao3, #btn-descricao4, #btn-descricao5, #btn-descricao6, #btn-descricao7, #btn-descricao8, #btn-descricao9, #btn-descricao10, #btn-descricao11, #btn-descricao12, #btn-descricao13, #btn-descricao14, #btn-descricao15, #btn-descricao16, #btn-descricao17, #btn-descricao18, #btn-descricao19, #btn-descricao20{
     background-color: white;
