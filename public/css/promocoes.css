@@ -18,6 +18,7 @@ body {
     padding: 0;
 }
 
+/* Navbar */
 .navbar {
     width: 100%;
     height: 100px;
@@ -25,11 +26,13 @@ body {
     display: flex;
 }
 
+/* Cabeçalho */
 .cabeca {
     width: 100%;
     height: 100px;
 }
 
+/* Link do cabeçalho */
 .cabeca a {
     text-decoration: 1px;
     color: #3D2F2C;
@@ -40,16 +43,19 @@ body {
     font-weight: 400;
 }
 
+/* Logo no cabeçalho */
 .logo {
     width: 160px;
     height: 100px;
 }
 
+/* Imagem da logo */
 .logo img {
     width: 160px;
     height: 100px;
 }
 
+/* Barra de pesquisa */
 .buscar {
     width: 80%;
     height: 90%;
@@ -78,6 +84,7 @@ body {
     border-radius: 5px 5px 0 0;
 }
 
+/* Imagem do login */
 .icons {
     display: flex;
     align-items: flex-end;
@@ -111,7 +118,7 @@ body {
     transition: 0.3s;
 }
 
-
+/* Lista das páginas */
 .options {
     display: flex;
     justify-content: center;
@@ -124,7 +131,7 @@ body {
     font-size: 15px;
 }
 
-
+/* Fundo da tela */
 .fundo2 {
     margin-top: -10px;
 }
@@ -155,6 +162,8 @@ li a:hover {
     color: #d3c5b0;
 
 }
+
+/* Botão de saiba mais */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -169,6 +178,8 @@ li a:hover {
 .btn:hover {
     background-color: #A78983;
 }
+
+/* Carrossel de imagens */
 .carrimg {
     display: flex;
     justify-content: center;
@@ -212,6 +223,7 @@ li a:hover {
 
 }
 
+/* Produtos */
 .produtos {
     overflow-x: hidden;
     max-width: 1200px;
@@ -250,6 +262,8 @@ li a:hover {
     width: 20px;
     height: 20px;
 }
+
+/* Descrição dos produtos */
 #btn-descricao, #btn-descricao2, #btn-descricao3, #btn-descricao4, #btn-descricao5, #btn-descricao6, #btn-descricao7, #btn-descricao8, #btn-descricao9, #btn-descricao10, #btn-descricao11, #btn-descricao12, #btn-descricao13, #btn-descricao14, #btn-descricao15, #btn-descricao16, #btn-descricao17, #btn-descricao18, #btn-descricao19, #btn-descricao20{
     background-color: white;
 }
@@ -267,18 +281,22 @@ li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 15%;
-    height: 15%;
-    background-color: black;
+    height:auto;
+    background-color: #3D2F2B;
+    border-radius: 5px;
 }
 
+/* Botão de fechar descrição */
 #btn-fechar, #btn-fechar2, #btn-fechar3, #btn-fechar4, #btn-fechar5, #btn-fechar6, #btn-fechar7, #btn-fechar8, #btn-fechar9, #btn-fechar10, #btn-fechar11, #btn-fechar12, #btn-fechar13, #btn-fechar14, #btn-fechar15, #btn-fechar16, #btn-fechar17, #btn-fechar18, #btn-fechar19, #btn-fechar20 {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: black;
+    background-color: #3D2F2B;
     color: white;
     cursor: pointer;
 }
+
+/* Produtos */
 .produtos .produtos-itens .item .titulo-item {
     display: block;
     width: 210px;
@@ -308,6 +326,7 @@ li a:hover {
     cursor: pointer;
 }
 
+/* Carrinho */
 .carrinho {
     width: 35%;
     margin-top: 100px;
@@ -458,7 +477,7 @@ li a:hover {
     }
 }
 
-
+/* Popup do pagamento */
 #payment-popup {
     display: none;
     position: fixed;
@@ -585,6 +604,7 @@ li a:hover {
     margin: 0;
 }
 
+/* Botão das instituições */
 #btn-instituicao {
     width: 100%;
     height: 40px;
@@ -605,6 +625,7 @@ li a:hover {
     scale: 1.05;
 }
 
+/* Botão de confirmar compra */
 .btn-confirmar {
     width: 100%;
     height: 40px;
@@ -625,6 +646,7 @@ li a:hover {
     scale: 1.05;
 }
 
+/* Popup das instituições */
 #instituicao-popup {
     display: none;
     position: fixed;
@@ -672,6 +694,7 @@ input {
     }
 }
 
+/* Botão de confirmar instituições */
 #btn-confirmar2 {
     width: 200%;
     height: 40px;
@@ -693,6 +716,7 @@ input {
     scale: 1.05;
 }
 
+/* Popup do pix */
 #pix-popup {
     display: none;
     position: fixed;
@@ -701,6 +725,7 @@ input {
     transform: translate(-50%, -50%);
 }
 
+/* Popup do boleto */
 #boleto-popup {
     display: none;
     position: fixed;
@@ -709,6 +734,7 @@ input {
     transform: translate(-50%, -50%);
 }
 
+/* Botão de continuar após pagar o pix */
 #btn-continuar {
     width: 100%;
     height: 40px;
@@ -729,6 +755,7 @@ input {
     scale: 1.05;
 }
 
+/* Botão de continuar após pagar o boleto */
 #btn-continuar2 {
     width: 100%;
     height: 40px;
@@ -749,8 +776,7 @@ input {
     scale: 1.05;
 }
 
-
-
+/* Rodapé */
 .footer {
     display: flex;
     justify-content: center;
@@ -761,11 +787,6 @@ input {
     flex-direction: column;
 }
 
-/* /* .containercake img{
-    width: 20%;
-    height: 30%;
-    position:relative;
-	/* left:0%; */
 
 
 .container_footer {
