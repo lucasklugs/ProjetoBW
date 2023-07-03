@@ -50,7 +50,7 @@ app.use(session({
      if (req.body.password === result.password){
         req.session.type = "user" 
          console.log("logged in")
-         res.redirect('/?li=true');
+         res.redirect('/index.html?li=true'); // volta para homepage e efetua um alerta
 
      }  
      else {
