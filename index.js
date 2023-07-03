@@ -50,7 +50,8 @@ app.use(session({
      if (req.body.password === result.password){
         req.session.type = "user" 
          console.log("logged in")
-         res.redirect('/');
+         res.redirect('/?li=true');
+
      }  
      else {
         console.log("Not connected")
