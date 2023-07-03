@@ -7,13 +7,11 @@
 body {
     background-color: #E8E5E0;
     width: 100%;
-    height: 100vh;
 }
 
 * {
     font-family: 'Fira Sans';
     margin: 0;
-    /* border: 0; */
     padding: 0;
 }
 
@@ -69,7 +67,6 @@ body {
     border: none;
     border-radius: 4px;
     padding: 0 60px 0 20px;
-
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -156,14 +153,11 @@ li a:hover {
 }
 
 .caixatexto{
-   
-    background-color: none;
     margin-top: 5%;
-    text-align: -webkit-match-parent;
-    display: inline-table;
-    margin-left: 50px;
-    line-height: 3vh;
-    
+    margin-left: 2%;
+    width: 60rem;
+    text-align: start;
+   
 }
  
 .title{
